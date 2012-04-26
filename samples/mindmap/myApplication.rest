@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF8"?>
+<rest:RestApplicationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rest="http://rest/1.0" xmlns:restbehavior="http://restbehavior/1.0" xmlns:reststructure="http://reststructure/1.0" name="RESTful Application">
+  <methodTypes name="POST"/>
+  <methodTypes name="GET"/>
+  <methodTypes name="PUT"/>
+  <methodTypes name="DELETE"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="string"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="boolean"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="file"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="int"/>
+  <mediaTypes name="atom+entry"/>
+  <mediaTypes name="img/png">
+    <containedMTElements mtelemType="//@dataTypes.2" name="binaryData"/>
+  </mediaTypes>
+  <mediaTypes name="topic">
+    <containedMTElements mtelemType="//@dataTypes.0" name="name"/>
+    <containedMTElements mtelemType="//@dataTypes.0" name="description"/>
+    <containedMTElements mtelemType="//@dataTypes.1" name="isRoot"/>
+    <containedMTElements mtelemType="//@dataTypes.1" name="isClosed"/>
+    <containedMTLinkCollections name="children"/>
+  </mediaTypes>
+  <mediaTypes name="application/json"/>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" initialState="//@resourceTypes.0/@states.0" name="Topic">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/topic/{id}"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="subtopics"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="name" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="chidlren" target="//@resourceTypes.3"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="map" target="//@resourceTypes.4"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="description" attrType="//@dataTypes.0"/>
+    <methods produced="//@mediaTypes.2" methodtype="//@methodTypes.1" name="get">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ReturnAction">
+          <status number="200"/>
+          <representation mediatype="//@mediaTypes.2" name="topic"/>
+        </action>
+      </methodbehavior>
+    </methods>
+    <methods consumed="//@mediaTypes.2" produced="//@mediaTypes.2" methodtype="//@methodTypes.2" name="updateTopic">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:UpdateAction"/>
+          <actionelements xsi:type="restbehavior:UpdateAction"/>
+          <actionelements xsi:type="restbehavior:ConditionalAction">
+            <actionIfTrue xsi:type="restbehavior:MessageAction" message="//@resourceTypes.0/@states.0/@transitions.0/@trigger.0"/>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:ReturnAction">
+            <status number="200"/>
+          </actionelements>
+        </action>
+      </methodbehavior>
+    </methods>
+    <methods methodtype="//@methodTypes.3" name="deleteTopic">
+      <methodbehavior/>
+    </methods>
+    <methods consumed="//@mediaTypes.2" produced="//@mediaTypes.2" methodtype="//@methodTypes.0" name="addChildTopic">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:CreateAction"/>
+          <actionelements xsi:type="restbehavior:ReturnAction">
+            <status number="200"/>
+            <representation mediatype="//@mediaTypes.2" name="topic"/>
+          </actionelements>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.0/@methods.0 //@resourceTypes.0/@methods.1 //@resourceTypes.0/@methods.2 //@resourceTypes.0/@methods.3">
+      <transitions targetState="//@resourceTypes.0/@states.1">
+        <trigger xsi:type="restbehavior:InternalMessage" name="close"/>
+      </transitions>
+    </states>
+    <states name="closed" supportedMethods="//@resourceTypes.0/@methods.0 //@resourceTypes.0/@methods.2"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:FilterResourceType" initialState="//@resourceTypes.1/@states.0" name="StartTopics" listElementType="//@resourceTypes.0">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="topic" target="//@resourceTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="alltopics" target="//@resourceTypes.2"/>
+    <methods methodtype="//@methodTypes.1" name="get">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ReturnAction">
+          <status number="200"/>
+          <representation mediatype="//@mediaTypes.3" name="application/json"/>
+        </action>
+      </methodbehavior>
+    </methods>
+    <methods consumed="//@mediaTypes.2" produced="//@mediaTypes.2" methodtype="//@methodTypes.0" name="addTopic">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:CreateAction"/>
+          <actionelements xsi:type="restbehavior:ReturnAction">
+            <status number="200"/>
+            <representation mediatype="//@mediaTypes.2" name="topic"/>
+          </actionelements>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.1/@methods.0 //@resourceTypes.1/@methods.1"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ListResourceType" initialState="//@resourceTypes.2/@states.0" name="AllTopics" listElementType="//@resourceTypes.0">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/topics"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="topic" target="//@resourceTypes.0"/>
+    <methods methodtype="//@methodTypes.1" name="get">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ReturnAction">
+          <status number="200"/>
+          <representation mediatype="//@mediaTypes.3" name="application/json"/>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.2/@methods.0"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:FilterResourceType" initialState="//@resourceTypes.3/@states.0" name="ChildTopics" listElementType="//@resourceTypes.0">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/topic/{id}/children"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="parent" target="//@resourceTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="topic" target="//@resourceTypes.0"/>
+    <methods methodtype="//@methodTypes.1" name="get">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ReturnAction">
+          <status number="200"/>
+          <representation mediatype="//@mediaTypes.3" name="application/json"/>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.3/@methods.0"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:AggregationResourceType" initialState="//@resourceTypes.4/@states.0" name="TopicMap" elementTypes="//@resourceTypes.0 //@resourceTypes.3">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/topic/{id}/mindmap"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="topic" target="//@resourceTypes.0"/>
+    <methods produced="//@mediaTypes.3" methodtype="//@methodTypes.1" name="get">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ReturnAction">
+          <status number="200"/>
+          <representation mediatype="//@mediaTypes.3" name="application/json"/>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.4/@methods.0"/>
+  </resourceTypes>
+</rest:RestApplicationModel>

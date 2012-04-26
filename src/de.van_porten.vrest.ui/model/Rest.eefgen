@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<eef-gen:EEFGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:eef-gen="http://www.eclipse.org/emf/eef/generation/1.0.0" genDirectory="/de.van_porten.vrest.ui.properties/src-gen" author="Oliver van Porten" testsGenDirectory="/de.van_porten.vrest.tests.ui.properties/src-gen">
+  <editionContexts basePackage="de.van_porten.vrest.ui.properties" descriptorsGenericPropertiesViews="true">
+    <PropertiesEditionContext href="Rest.components#_p3maEBggEeGPGcdgqrfNFQ"/>
+  </editionContexts>
+  <editionContexts basePackage="de.van_porten.vrest.ui.properties" descriptorsGenericPropertiesViews="true">
+    <PropertiesEditionContext href="Rest.components#_p3maGhggEeGPGcdgqrfNFQ"/>
+  </editionContexts>
+  <editionContexts basePackage="de.van_porten.vrest.ui.properties" descriptorsGenericPropertiesViews="true">
+    <PropertiesEditionContext href="Rest.components#_p3nBVRggEeGPGcdgqrfNFQ"/>
+  </editionContexts>
+  <viewsRepositories basePackage="de.van_porten.vrest.core.model.reststructure" swtViews="true" formViews="true" partsSuperClass="">
+    <viewsRepository href="Rest.components#_p3nBjBggEeGPGcdgqrfNFQ"/>
+  </viewsRepositories>
+  <viewsRepositories basePackage="de.van_porten.vrest.core.model.restbehavior" swtViews="true" formViews="true">
+    <viewsRepository href="Rest.components#_p3nouRggEeGPGcdgqrfNFQ"/>
+  </viewsRepositories>
+  <viewsRepositories basePackage="de.van_porten.vrest.core.model.rest" swtViews="true" formViews="true">
+    <viewsRepository href="Rest.components#_p3oPfxggEeGPGcdgqrfNFQ"/>
+  </viewsRepositories>
+</eef-gen:EEFGenModel>

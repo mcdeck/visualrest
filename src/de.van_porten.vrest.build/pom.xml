@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+  xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>de.van_porten</groupId>
+  <artifactId>de.van_porten.vrest.build</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <tycho-version>0.13.0</tycho-version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <platform-version-name>indigo</platform-version-name>
+
+    <eclipse-site>http://download.eclipse.org/releases/${platform-version-name}</eclipse-site>
+    <swtbot-site>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site</swtbot-site>
+    <eef-site>http://download.eclipse.org/modeling/emft/eef/updates/releases</eef-site>
+    <graphiti-site>http://download.eclipse.org/graphiti/updates/0.8.1</graphiti-site>
+    <orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository</orbit-site>
+    <graphiti-milestone-site>http://download.eclipse.org/graphiti/updates/milestones</graphiti-milestone-site>
+    <windowtester-pro-site>http://dl.google.com/eclipse/inst/windowtester/beta/3.7</windowtester-pro-site>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>indigo</id>
+      <layout>p2</layout>
+      <url>${eclipse-site}</url>
+    </repository>
+    <repository>
+      <id>swtbot</id>
+      <layout>p2</layout>
+      <url>${swtbot-site}</url>
+    </repository>
+    <repository>
+      <id>eef</id>
+      <layout>p2</layout>
+      <url>${eef-site}</url>
+    </repository>
+    <repository>
+      <id>graphiti</id>
+      <layout>p2</layout>
+      <url>${graphiti-site}</url>
+    </repository>
+    <repository>
+      <id>oribt</id>
+      <layout>p2</layout>
+      <url>${orbit-site}</url>
+    </repository>
+    <repository>
+      <id>graphiti_milestones</id>
+      <layout>p2</layout>
+      <url>${graphiti-milestone-site}</url>
+    </repository>
+    <repository>
+      <id>windowtester</id>
+      <layout>p2</layout>
+      <url>${windowtester-pro-site}</url>
+    </repository>
+  </repositories>
+
+  <modules>
+    <module>../de.van_porten.vrest.core</module>
+    <module>../de.van_porten.vrest.core.edit</module>
+    <module>../de.van_porten.vrest.core.editor</module>
+    <module>../de.van_porten.vrest.core.feature</module>
+
+    <module>../de.van_porten.vrest.help</module>
+    <module>../de.van_porten.vrest.help.feature</module>
+
+    <module>../de.van_porten.vrest.ui</module>
+    <module>../de.van_porten.vrest.ui.properties</module>
+    <module>../de.van_porten.vrest.ui.feature</module>
+
+    <module>../de.van_porten.vrest.bundle</module>
+    <module>../de.van_porten.vrest.feature</module>
+
+    <module>../de.van_porten.vrest.tests.core</module>
+    <module>../de.van_porten.vrest.tests.ui</module>
+    <module>../de.van_porten.vrest.tests.recorded</module>
+    <module>../de.van_porten.vrest.tests.feature</module>
+
+    <module>../de.van_porten.vrest.p2-repository</module>
+  </modules>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <resolver>p2</resolver>
+
+          <environments>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86</arch>
+            </environment>
+
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86_64</arch>
+            </environment>
+
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86</arch>
+            </environment>
+
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86</arch>
+            </environment>
+
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86_64</arch>
+            </environment>
+
+           </environments>
+          <ignoreTychoRepositories>true</ignoreTychoRepositories>
+        </configuration>
+      </plugin>
+
+      <!-- Testing -->
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-surefire-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <useUIHarness>false</useUIHarness>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+          <!-- Kill test JVM if tests take more than 10 minutes (600 seconds)
+            to finish -->
+          <forkedProcessTimeoutInSeconds>600</forkedProcessTimeoutInSeconds>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.van_porten.vrest.core/src-gen"
+    editDirectory="/de.van_porten.vrest.core.edit/src-gen" editorDirectory="/de.van_porten.vrest.core.editor/src-gen"
+    modelPluginID="de.van_porten.vrest.core" modelName="Rest" testsDirectory="/de.van_porten.vrest.tests.core/src"
+    testSuiteClass="de.van_porten.vrest.tests.core.model.RestAllTests" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" testsPluginID="de.van_porten.vrest.tests.core">
+  <foreignModel>Rest.ecore</foreignModel>
+  <genPackages prefix="Rest" basePackage="de.van_porten.vrest.core.model" disposableProviderFactory="true"
+      ecorePackage="Rest.ecore#/">
+    <genClasses ecoreClass="Rest.ecore#//RestApplicationModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rest.ecore#//RestApplicationModel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rest.ecore#//RestApplicationModel/methodTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rest.ecore#//RestApplicationModel/dataTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rest.ecore#//RestApplicationModel/mediaTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rest.ecore#//RestApplicationModel/resourceTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rest.ecore#//RestApplicationModel/relTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rest.ecore#//RestApplicationModel/optypes"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="RestStructure" basePackage="de.van_porten.vrest.core.model"
+      disposableProviderFactory="true" ecorePackage="RestStructure.ecore#/">
+    <genClasses image="false" ecoreClass="RestStructure.ecore#//ResourceType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ResourceType/identifer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ResourceType/resourceelements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ResourceType/methods"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ResourceType/creators"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ResourceType/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ResourceType/initialState"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//ResourceType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//ResourceType/isSingleton"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//ResourceType/createOnStart"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="RestStructure.ecore#//ResourceElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//ResourceElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="RestStructure.ecore#//ResourceIdentifierPattern"/>
+    <genClasses ecoreClass="RestStructure.ecore#//Attribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Attribute/attrType"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="RestStructure.ecore#//Link">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Link/relType"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//LinkCollection"/>
+    <genClasses image="false" ecoreClass="RestStructure.ecore#//DataType"/>
+    <genClasses ecoreClass="RestStructure.ecore#//Parameter">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Parameter/paramType"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//Method">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Method/consumed"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Method/produced"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Method/methodtype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Method/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Method/methodbehavior"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//Method/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//MediaType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//MediaType/containedMTElements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//MediaType/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//MediaType/containedMTLinks"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//MediaType/containedMTLinkCollections"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//Representation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Representation/containedRepElements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Representation/mediatype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//Representation/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Representation/containedRepLinks"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//Representation/containedRepLinkCollections"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//RepresentationElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//RepresentationElement/correspondingElement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//RepresentationElement/repElemType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//RepresentationElement/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestStructure.ecore#//RepresentationElement/value"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//MethodType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//MethodType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//RelationType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//RelationType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//InternalLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//InternalLink/target"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//ExternalLink"/>
+    <genClasses ecoreClass="RestStructure.ecore#//ExternalLinkCollection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ExternalLinkCollection/extElements"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//InternalLinkCollection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//InternalLinkCollection/intElements"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//PrimitiveDataType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//PrimitiveDataType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//CollectionType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//CollectionType/elementType"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//SimpleIdentifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//SimpleIdentifier/identifier"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//ComplexIdentifierPattern">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ComplexIdentifierPattern/idParams"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ComplexIdentifierPattern/idAttrs"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//MediaTypeElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//MediaTypeElement/mtelemType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//MediaTypeElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//SubresourceType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//SubresourceType/containingType"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//AggregationResourceType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//AggregationResourceType/elementTypes"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//PrimaryResourceType"/>
+    <genClasses ecoreClass="RestStructure.ecore#//ActivityResourceType"/>
+    <genClasses ecoreClass="RestStructure.ecore#//PagingResourceType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//PagingResourceType/pagedType"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//ProjectionResourceType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ProjectionResourceType/projectedType"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//ListResourceType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//ListResourceType/listElementType"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//FilterResourceType"/>
+    <genClasses ecoreClass="RestStructure.ecore#//MediaTypeLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//MediaTypeLink/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//MediaTypeLinkCollection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//MediaTypeLinkCollection/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//RepresentationLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//RepresentationLink/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//RepresentationLink/correspondingLink"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//RepresentationLink/linkValue"/>
+    </genClasses>
+    <genClasses ecoreClass="RestStructure.ecore#//RepresentationLinkCollection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestStructure.ecore#//RepresentationLinkCollection/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestStructure.ecore#//RepresentationLinkCollection/correspondingLinkCollection"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="RestBehavior" basePackage="de.van_porten.vrest.core.model"
+      disposableProviderFactory="true" ecorePackage="RestBehavior.ecore#/">
+    <genClasses ecoreClass="RestBehavior.ecore#//Creator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Creator/consumedMT"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Creator/creatorParams"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Creator/createbehavior"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//BehaviorSpecification">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//BehaviorSpecification/action"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="RestBehavior.ecore#//Action"/>
+    <genClasses ecoreClass="RestBehavior.ecore#//State">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//State/entering"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//State/leaving"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//State/transitions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestBehavior.ecore#//State/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//State/supportedMethods"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//Transition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Transition/trigger"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Transition/targetState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Transition/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Transition/effect"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="RestBehavior.ecore#//Trigger"/>
+    <genClasses ecoreClass="RestBehavior.ecore#//Condition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Condition/conditionExpr"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//InternalMessage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestBehavior.ecore#//InternalMessage/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//MessageAction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//MessageAction/message"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//ConditionalAction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//ConditionalAction/actionCondition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//ConditionalAction/actionIfTrue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//ConditionalAction/actionIfFalse"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//CreateAction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//CreateAction/creator"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//ListAddAction"/>
+    <genClasses ecoreClass="RestBehavior.ecore#//ListRemoveAction"/>
+    <genClasses ecoreClass="RestBehavior.ecore#//ActionSequence">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//ActionSequence/actionelements"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//UpdateAction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//UpdateAction/elementForUpdate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//UpdateAction/newValue"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//ReturnAction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//ReturnAction/status"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//ReturnAction/metadata"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//ReturnAction/representation"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//StatusCode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestBehavior.ecore#//StatusCode/number"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//Metadata"/>
+    <genClasses image="false" ecoreClass="RestBehavior.ecore#//Value"/>
+    <genClasses ecoreClass="RestBehavior.ecore#//Constant">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//Constant/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestBehavior.ecore#//Constant/stringRepresentation"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="RestBehavior.ecore#//Reference"/>
+    <genClasses image="false" ecoreClass="RestBehavior.ecore#//Operation"/>
+    <genClasses ecoreClass="RestBehavior.ecore#//BinaryOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//BinaryOperation/firstOp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//BinaryOperation/secondOp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//BinaryOperation/optype"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="RestBehavior.ecore#//OpType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//OpType/resultType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RestBehavior.ecore#//OpType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//BinOpType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//BinOpType/firstOpType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//BinOpType/secondOpType"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//AttributeReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//AttributeReference/referencedAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//InternalLinkReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//InternalLinkReference/referencedLink"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//InternalLinkReference/referencedReference"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="RestBehavior.ecore#//WritableReference"/>
+    <genClasses image="false" ecoreClass="RestBehavior.ecore#//MTReference"/>
+    <genClasses ecoreClass="RestBehavior.ecore#//MTLinkReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//MTLinkReference/referencedMTLink"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//MtElementReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//MtElementReference/referencedMTElement"/>
+    </genClasses>
+    <genClasses ecoreClass="RestBehavior.ecore#//DeletedState"/>
+    <genClasses ecoreClass="RestBehavior.ecore#//ExternalLinkReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RestBehavior.ecore#//ExternalLinkReference/referencedExternalLink"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

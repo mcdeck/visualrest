@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="rest"
+    nsURI="http://rest/1.0" nsPrefix="rest">
+  <eAnnotations references="#//RestApplicationModel">
+    <details key="description" value="describes an application"/>
+  </eAnnotations>
+  <eAnnotations references="#//RestApplicationModel/name">
+    <details key="description" value="the name of the application"/>
+  </eAnnotations>
+  <eAnnotations references="#//RestApplicationModel/methodTypes">
+    <details key="description" value="all MethodTypes in this model"/>
+  </eAnnotations>
+  <eAnnotations references="#//RestApplicationModel/dataTypes">
+    <details key="description" value="all DataTypes in this model"/>
+  </eAnnotations>
+  <eAnnotations references="#//RestApplicationModel/mediaTypes">
+    <details key="description" value="all MediaTypes in this model"/>
+  </eAnnotations>
+  <eAnnotations references="#//RestApplicationModel/resourceTypes">
+    <details key="description" value="all ResourceTypes in this model"/>
+  </eAnnotations>
+  <eAnnotations references="#//RestApplicationModel/relTypes">
+    <details key="description" value="all RelationTypes in this model"/>
+  </eAnnotations>
+  <eAnnotations references="#//RestApplicationModel/optypes">
+    <details key="description" value="all types of operators in this model"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="RestApplicationModel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methodTypes" upperBound="-1"
+        eType="ecore:EClass RestStructure.ecore#//MethodType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataTypes" upperBound="-1"
+        eType="ecore:EClass RestStructure.ecore#//DataType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mediaTypes" upperBound="-1"
+        eType="ecore:EClass RestStructure.ecore#//MediaType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resourceTypes" upperBound="-1"
+        eType="ecore:EClass RestStructure.ecore#//ResourceType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relTypes" upperBound="-1"
+        eType="ecore:EClass RestStructure.ecore#//RelationType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="optypes" upperBound="-1"
+        eType="ecore:EClass RestBehavior.ecore#//OpType" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

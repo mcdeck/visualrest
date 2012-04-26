@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eef-components="http://www.eclipse.org/emf/eef/components/1.0.0" xmlns:eef-views="http://www.eclipse.org/emf/eef/views/1.0.0">
+  <eef-components:PropertiesEditionContext xmi:id="_p3maEBggEeGPGcdgqrfNFQ" documentation="Edition Context for rest GenPackage">
+    <categories xmi:id="_p3maERggEeGPGcdgqrfNFQ" name="rest">
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maEhggEeGPGcdgqrfNFQ" name="RestApplicationModel" views="_p3oPgRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maExggEeGPGcdgqrfNFQ" name="name" views="_p3oPgxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/Rest.ecore#//RestApplicationModel/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maFBggEeGPGcdgqrfNFQ" name="methodTypes" views="_p3oPhBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/Rest.ecore#//RestApplicationModel/methodTypes"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maFRggEeGPGcdgqrfNFQ" name="dataTypes" views="_p3oPhRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/Rest.ecore#//RestApplicationModel/dataTypes"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maFhggEeGPGcdgqrfNFQ" name="mediaTypes" views="_p3oPhhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/Rest.ecore#//RestApplicationModel/mediaTypes"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maFxggEeGPGcdgqrfNFQ" name="resourceTypes" views="_p3oPhxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/Rest.ecore#//RestApplicationModel/resourceTypes"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maGBggEeGPGcdgqrfNFQ" name="relTypes" views="_p3oPiBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/Rest.ecore#//RestApplicationModel/relTypes"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maGRggEeGPGcdgqrfNFQ" name="optypes" views="_p3oPiRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/Rest.ecore#//RestApplicationModel/optypes"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/Rest.ecore#//RestApplicationModel"/>
+      </bindings>
+    </categories>
+    <model href="platform:/resource/de.van_porten.vrest.core/model/Rest.genmodel#//rest"/>
+  </eef-components:PropertiesEditionContext>
+  <eef-components:PropertiesEditionContext xmi:id="_p3maGhggEeGPGcdgqrfNFQ" documentation="Edition Context for reststructure GenPackage">
+    <categories xmi:id="_p3maGxggEeGPGcdgqrfNFQ" name="reststructure">
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maHBggEeGPGcdgqrfNFQ" name="Attribute" views="_p3nBjhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maHRggEeGPGcdgqrfNFQ" name="name" views="_p3nBkBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maHhggEeGPGcdgqrfNFQ" name="attrType" views="_p3nBkRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Attribute/attrType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Attribute"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maHxggEeGPGcdgqrfNFQ" name="LinkCollection" views="_p3nBkhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maIBggEeGPGcdgqrfNFQ" name="name" views="_p3nBlBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceElement/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//LinkCollection"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maIRggEeGPGcdgqrfNFQ" name="Parameter" views="_p3nBlRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maIhggEeGPGcdgqrfNFQ" name="paramType" views="_p3nBlxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Parameter/paramType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Parameter"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maIxggEeGPGcdgqrfNFQ" name="Method" views="_p3nBmBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maJBggEeGPGcdgqrfNFQ" name="consumed" views="_p3nBmhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Method/consumed"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maJRggEeGPGcdgqrfNFQ" name="produced" views="_p3nBmxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Method/produced"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maJhggEeGPGcdgqrfNFQ" name="methodtype" views="_p3nBnBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Method/methodtype"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maJxggEeGPGcdgqrfNFQ" name="parameters" views="_p3nBnRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Method/parameters"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maKBggEeGPGcdgqrfNFQ" name="name" views="_p3nBnhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Method/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Method"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maKRggEeGPGcdgqrfNFQ" name="MediaType" views="_p3nBnxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maKhggEeGPGcdgqrfNFQ" name="containedMTElements" views="_p3nBoRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaType/containedMTElements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maKxggEeGPGcdgqrfNFQ" name="name" views="_p3nBohggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maLBggEeGPGcdgqrfNFQ" name="containedMTLinks" views="_p3nBoxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaType/containedMTLinks"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maLRggEeGPGcdgqrfNFQ" name="containedMTLinkCollections" views="_p3nBpBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaType/containedMTLinkCollections"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maLhggEeGPGcdgqrfNFQ" name="Representation" views="_p3nBpRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maLxggEeGPGcdgqrfNFQ" name="containedRepElements" views="_p3nBpxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Representation/containedRepElements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maMBggEeGPGcdgqrfNFQ" name="mediatype" views="_p3nBqBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Representation/mediatype"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maMRggEeGPGcdgqrfNFQ" name="name" views="_p3nBqRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Representation/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maMhggEeGPGcdgqrfNFQ" name="containedRepLinks" views="_p3nBqhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Representation/containedRepLinks"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maMxggEeGPGcdgqrfNFQ" name="containedRepLinkCollections" views="_p3nBqxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Representation/containedRepLinkCollections"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Representation"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maNBggEeGPGcdgqrfNFQ" name="RepresentationElement" views="_p3nBrBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maNRggEeGPGcdgqrfNFQ" name="correspondingElement" views="_p3nBrhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationElement/correspondingElement"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maNhggEeGPGcdgqrfNFQ" name="repElemType" views="_p3nBrxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationElement/repElemType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maNxggEeGPGcdgqrfNFQ" name="name" views="_p3nBsBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationElement/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationElement"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maOBggEeGPGcdgqrfNFQ" name="MethodType" views="_p3nBsRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maORggEeGPGcdgqrfNFQ" name="name" views="_p3nBsxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MethodType/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MethodType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maOhggEeGPGcdgqrfNFQ" name="RelationType" views="_p3nBtBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maOxggEeGPGcdgqrfNFQ" name="name" views="_p3nBthggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RelationType/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RelationType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maPBggEeGPGcdgqrfNFQ" name="InternalLink" views="_p3nBtxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maPRggEeGPGcdgqrfNFQ" name="name" views="_p3nBuRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maPhggEeGPGcdgqrfNFQ" name="relType" views="_p3nBuhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Link/relType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maPxggEeGPGcdgqrfNFQ" name="target" views="_p3nBuxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//InternalLink/target"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//InternalLink"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maQBggEeGPGcdgqrfNFQ" name="ExternalLink" views="_p3nBvBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maQRggEeGPGcdgqrfNFQ" name="name" views="_p3noMRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maQhggEeGPGcdgqrfNFQ" name="relType" views="_p3noMhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//Link/relType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ExternalLink"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maQxggEeGPGcdgqrfNFQ" name="ExternalLinkCollection" views="_p3noMxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maRBggEeGPGcdgqrfNFQ" name="name" views="_p3noNRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maRRggEeGPGcdgqrfNFQ" name="extElements" views="_p3noNhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ExternalLinkCollection/extElements"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ExternalLinkCollection"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maRhggEeGPGcdgqrfNFQ" name="InternalLinkCollection" views="_p3noNxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maRxggEeGPGcdgqrfNFQ" name="name" views="_p3noORggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maSBggEeGPGcdgqrfNFQ" name="intElements" views="_p3noOhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//InternalLinkCollection/intElements"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//InternalLinkCollection"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maSRggEeGPGcdgqrfNFQ" name="PrimitiveDataType" views="_p3noOxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maShggEeGPGcdgqrfNFQ" name="name" views="_p3noPRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//PrimitiveDataType/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//PrimitiveDataType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maSxggEeGPGcdgqrfNFQ" name="CollectionType" views="_p3noPhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maTBggEeGPGcdgqrfNFQ" name="elementType" views="_p3noQBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//CollectionType/elementType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//CollectionType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maTRggEeGPGcdgqrfNFQ" name="SimpleIdentifier" views="_p3noQRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maThggEeGPGcdgqrfNFQ" name="identifier" views="_p3noQxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//SimpleIdentifier/identifier"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//SimpleIdentifier"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maTxggEeGPGcdgqrfNFQ" name="ComplexIdentifierPattern" views="_p3noRBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maUBggEeGPGcdgqrfNFQ" name="idParams" views="_p3noRhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ComplexIdentifierPattern/idParams"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maURggEeGPGcdgqrfNFQ" name="idAttrs" views="_p3noRxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ComplexIdentifierPattern/idAttrs"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ComplexIdentifierPattern"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maUhggEeGPGcdgqrfNFQ" name="MediaTypeElement" views="_p3noSBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maUxggEeGPGcdgqrfNFQ" name="mtelemType" views="_p3noShggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaTypeElement/mtelemType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maVBggEeGPGcdgqrfNFQ" name="name" views="_p3noSxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaTypeElement/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaTypeElement"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maVRggEeGPGcdgqrfNFQ" name="SubresourceType" views="_p3noTBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maVhggEeGPGcdgqrfNFQ" name="identifer" views="_p3noThggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/identifer"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maVxggEeGPGcdgqrfNFQ" name="resourceelements" views="_p3noTxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/resourceelements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maWBggEeGPGcdgqrfNFQ" name="methods" views="_p3noUBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/methods"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maWRggEeGPGcdgqrfNFQ" name="creators" views="_p3noURggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/creators"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maWhggEeGPGcdgqrfNFQ" name="states" views="_p3noUhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/states"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maWxggEeGPGcdgqrfNFQ" name="initialState" views="_p3noUxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/initialState"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maXBggEeGPGcdgqrfNFQ" name="name" views="_p3noVBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maXRggEeGPGcdgqrfNFQ" name="isSingleton" views="_p3noVRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/isSingleton"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maXhggEeGPGcdgqrfNFQ" name="createOnStart" views="_p3noVhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/createOnStart"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maXxggEeGPGcdgqrfNFQ" name="containingType" views="_p3noVxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//SubresourceType/containingType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//SubresourceType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maYBggEeGPGcdgqrfNFQ" name="AggregationResourceType" views="_p3noWBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maYRggEeGPGcdgqrfNFQ" name="identifer" views="_p3noWhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/identifer"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maYhggEeGPGcdgqrfNFQ" name="resourceelements" views="_p3noWxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/resourceelements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maYxggEeGPGcdgqrfNFQ" name="methods" views="_p3noXBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/methods"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maZBggEeGPGcdgqrfNFQ" name="creators" views="_p3noXRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/creators"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maZRggEeGPGcdgqrfNFQ" name="states" views="_p3noXhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/states"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maZhggEeGPGcdgqrfNFQ" name="initialState" views="_p3noXxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/initialState"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maZxggEeGPGcdgqrfNFQ" name="name" views="_p3noYBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maaBggEeGPGcdgqrfNFQ" name="isSingleton" views="_p3noYRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/isSingleton"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maaRggEeGPGcdgqrfNFQ" name="createOnStart" views="_p3noYhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/createOnStart"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maahggEeGPGcdgqrfNFQ" name="elementTypes" views="_p3noYxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//AggregationResourceType/elementTypes"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//AggregationResourceType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3maaxggEeGPGcdgqrfNFQ" name="PrimaryResourceType" views="_p3noZBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3mabBggEeGPGcdgqrfNFQ" name="identifer" views="_p3noZhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/identifer"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3mabRggEeGPGcdgqrfNFQ" name="resourceelements" views="_p3noZxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/resourceelements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3mabhggEeGPGcdgqrfNFQ" name="methods" views="_p3noaBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/methods"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3mabxggEeGPGcdgqrfNFQ" name="creators" views="_p3noaRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/creators"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3macBggEeGPGcdgqrfNFQ" name="states" views="_p3noahggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/states"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3macRggEeGPGcdgqrfNFQ" name="initialState" views="_p3noaxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/initialState"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3machggEeGPGcdgqrfNFQ" name="name" views="_p3nobBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3macxggEeGPGcdgqrfNFQ" name="isSingleton" views="_p3nobRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/isSingleton"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3madBggEeGPGcdgqrfNFQ" name="createOnStart" views="_p3nobhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/createOnStart"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//PrimaryResourceType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3madRggEeGPGcdgqrfNFQ" name="ActivityResourceType" views="_p3nobxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3madhggEeGPGcdgqrfNFQ" name="identifer" views="_p3nocRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/identifer"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3madxggEeGPGcdgqrfNFQ" name="resourceelements" views="_p3nochggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/resourceelements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maeBggEeGPGcdgqrfNFQ" name="methods" views="_p3nocxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/methods"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maeRggEeGPGcdgqrfNFQ" name="creators" views="_p3nodBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/creators"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maehggEeGPGcdgqrfNFQ" name="states" views="_p3nodRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/states"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3maexggEeGPGcdgqrfNFQ" name="initialState" views="_p3nodhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/initialState"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3mafBggEeGPGcdgqrfNFQ" name="name" views="_p3nodxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3mafRggEeGPGcdgqrfNFQ" name="isSingleton" views="_p3noeBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/isSingleton"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3mafhggEeGPGcdgqrfNFQ" name="createOnStart" views="_p3noeRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/createOnStart"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ActivityResourceType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3mafxggEeGPGcdgqrfNFQ" name="PagingResourceType" views="_p3noehggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3magBggEeGPGcdgqrfNFQ" name="identifer" views="_p3nofBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/identifer"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBIBggEeGPGcdgqrfNFQ" name="resourceelements" views="_p3nofRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/resourceelements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBIRggEeGPGcdgqrfNFQ" name="methods" views="_p3nofhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/methods"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBIhggEeGPGcdgqrfNFQ" name="creators" views="_p3nofxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/creators"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBIxggEeGPGcdgqrfNFQ" name="states" views="_p3nogBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/states"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBJBggEeGPGcdgqrfNFQ" name="initialState" views="_p3nogRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/initialState"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBJRggEeGPGcdgqrfNFQ" name="name" views="_p3noghggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBJhggEeGPGcdgqrfNFQ" name="isSingleton" views="_p3nogxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/isSingleton"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBJxggEeGPGcdgqrfNFQ" name="createOnStart" views="_p3nohBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/createOnStart"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBKBggEeGPGcdgqrfNFQ" name="pagedType" views="_p3nohRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//PagingResourceType/pagedType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//PagingResourceType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBKRggEeGPGcdgqrfNFQ" name="ProjectionResourceType" views="_p3nohhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBKhggEeGPGcdgqrfNFQ" name="identifer" views="_p3noiBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/identifer"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBKxggEeGPGcdgqrfNFQ" name="resourceelements" views="_p3noiRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/resourceelements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBLBggEeGPGcdgqrfNFQ" name="methods" views="_p3noihggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/methods"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBLRggEeGPGcdgqrfNFQ" name="creators" views="_p3noixggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/creators"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBLhggEeGPGcdgqrfNFQ" name="states" views="_p3nojBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/states"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBLxggEeGPGcdgqrfNFQ" name="initialState" views="_p3nojRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/initialState"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBMBggEeGPGcdgqrfNFQ" name="name" views="_p3nojhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBMRggEeGPGcdgqrfNFQ" name="isSingleton" views="_p3nojxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/isSingleton"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBMhggEeGPGcdgqrfNFQ" name="createOnStart" views="_p3nokBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/createOnStart"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBMxggEeGPGcdgqrfNFQ" name="projectedType" views="_p3nokRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ProjectionResourceType/projectedType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ProjectionResourceType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBNBggEeGPGcdgqrfNFQ" name="ListResourceType" views="_p3nokhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBNRggEeGPGcdgqrfNFQ" name="identifer" views="_p3nolBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/identifer"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBNhggEeGPGcdgqrfNFQ" name="resourceelements" views="_p3nolRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/resourceelements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBNxggEeGPGcdgqrfNFQ" name="methods" views="_p3nolhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/methods"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBOBggEeGPGcdgqrfNFQ" name="creators" views="_p3nolxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/creators"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBORggEeGPGcdgqrfNFQ" name="states" views="_p3nomBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/states"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBOhggEeGPGcdgqrfNFQ" name="initialState" views="_p3nomRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/initialState"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBOxggEeGPGcdgqrfNFQ" name="name" views="_p3nomhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBPBggEeGPGcdgqrfNFQ" name="isSingleton" views="_p3nomxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/isSingleton"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBPRggEeGPGcdgqrfNFQ" name="createOnStart" views="_p3nonBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/createOnStart"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBPhggEeGPGcdgqrfNFQ" name="listElementType" views="_p3nonRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ListResourceType/listElementType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ListResourceType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBPxggEeGPGcdgqrfNFQ" name="FilterResourceType" views="_p3nonhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBQBggEeGPGcdgqrfNFQ" name="identifer" views="_p3nooBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/identifer"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBQRggEeGPGcdgqrfNFQ" name="resourceelements" views="_p3nooRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/resourceelements"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBQhggEeGPGcdgqrfNFQ" name="methods" views="_p3noohggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/methods"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBQxggEeGPGcdgqrfNFQ" name="creators" views="_p3nooxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/creators"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBRBggEeGPGcdgqrfNFQ" name="states" views="_p3nopBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/states"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBRRggEeGPGcdgqrfNFQ" name="initialState" views="_p3nopRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/initialState"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBRhggEeGPGcdgqrfNFQ" name="name" views="_p3nophggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBRxggEeGPGcdgqrfNFQ" name="isSingleton" views="_p3nopxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/isSingleton"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBSBggEeGPGcdgqrfNFQ" name="createOnStart" views="_p3noqBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ResourceType/createOnStart"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBSRggEeGPGcdgqrfNFQ" name="listElementType" views="_p3noqRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//ListResourceType/listElementType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//FilterResourceType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBShggEeGPGcdgqrfNFQ" name="MediaTypeLink" views="_p3noqhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBSxggEeGPGcdgqrfNFQ" name="name" views="_p3norBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaTypeLink/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaTypeLink"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBTBggEeGPGcdgqrfNFQ" name="MediaTypeLinkCollection" views="_p3norRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBTRggEeGPGcdgqrfNFQ" name="name" views="_p3norxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaTypeLinkCollection/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//MediaTypeLinkCollection"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBThggEeGPGcdgqrfNFQ" name="RepresentationLink" views="_p3nosBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBTxggEeGPGcdgqrfNFQ" name="name" views="_p3noshggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationLink/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBUBggEeGPGcdgqrfNFQ" name="correspondingLink" views="_p3nosxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationLink/correspondingLink"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBURggEeGPGcdgqrfNFQ" name="linkValue" views="_p3notBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationLink/linkValue"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationLink"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBUhggEeGPGcdgqrfNFQ" name="RepresentationLinkCollection" views="_p3notRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBUxggEeGPGcdgqrfNFQ" name="name" views="_p3notxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationLinkCollection/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBVBggEeGPGcdgqrfNFQ" name="correspondingLinkCollection" views="_p3nouBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationLinkCollection/correspondingLinkCollection"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestStructure.ecore#//RepresentationLinkCollection"/>
+      </bindings>
+    </categories>
+    <model href="platform:/resource/de.van_porten.vrest.core/model/Rest.genmodel#//reststructure"/>
+  </eef-components:PropertiesEditionContext>
+  <eef-components:PropertiesEditionContext xmi:id="_p3nBVRggEeGPGcdgqrfNFQ" documentation="Edition Context for restbehavior GenPackage">
+    <categories xmi:id="_p3nBVhggEeGPGcdgqrfNFQ" name="restbehavior">
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBVxggEeGPGcdgqrfNFQ" name="Creator" views="_p3nouxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBWBggEeGPGcdgqrfNFQ" name="consumedMT" views="_p3novRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Creator/consumedMT"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBWRggEeGPGcdgqrfNFQ" name="creatorParams" views="_p3novhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Creator/creatorParams"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Creator"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBWhggEeGPGcdgqrfNFQ" name="BehaviorSpecification" views="_p3novxggEeGPGcdgqrfNFQ">
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//BehaviorSpecification"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBWxggEeGPGcdgqrfNFQ" name="State" views="_p3nowRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBXBggEeGPGcdgqrfNFQ" name="transitions" views="_p3nowxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//State/transitions"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBXRggEeGPGcdgqrfNFQ" name="name" views="_p3noxBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//State/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBXhggEeGPGcdgqrfNFQ" name="supportedMethods" views="_p3noxRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//State/supportedMethods"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//State"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBXxggEeGPGcdgqrfNFQ" name="Transition" views="_p3noxhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBYBggEeGPGcdgqrfNFQ" name="trigger" views="_p3oPQRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Transition/trigger"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBYRggEeGPGcdgqrfNFQ" name="targetState" views="_p3oPQhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Transition/targetState"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Transition"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBYhggEeGPGcdgqrfNFQ" name="Condition" views="_p3oPQxggEeGPGcdgqrfNFQ">
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Condition"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBYxggEeGPGcdgqrfNFQ" name="InternalMessage" views="_p3oPRRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBZBggEeGPGcdgqrfNFQ" name="name" views="_p3oPRxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//InternalMessage/name"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//InternalMessage"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBZRggEeGPGcdgqrfNFQ" name="MessageAction" views="_p3oPSBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBZhggEeGPGcdgqrfNFQ" name="message" views="_p3oPShggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//MessageAction/message"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//MessageAction"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBZxggEeGPGcdgqrfNFQ" name="ConditionalAction" views="_p3oPSxggEeGPGcdgqrfNFQ">
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ConditionalAction"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBaBggEeGPGcdgqrfNFQ" name="CreateAction" views="_p3oPTRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBaRggEeGPGcdgqrfNFQ" name="creator" views="_p3oPTxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//CreateAction/creator"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//CreateAction"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBahggEeGPGcdgqrfNFQ" name="ListAddAction" views="_p3oPUBggEeGPGcdgqrfNFQ">
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ListAddAction"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBaxggEeGPGcdgqrfNFQ" name="ListRemoveAction" views="_p3oPURggEeGPGcdgqrfNFQ">
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ListRemoveAction"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBbBggEeGPGcdgqrfNFQ" name="ActionSequence" views="_p3oPUhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBbRggEeGPGcdgqrfNFQ" name="actionelements" views="_p3oPVBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ActionSequence/actionelements"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ActionSequence"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBbhggEeGPGcdgqrfNFQ" name="UpdateAction" views="_p3oPVRggEeGPGcdgqrfNFQ">
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//UpdateAction"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBbxggEeGPGcdgqrfNFQ" name="ReturnAction" views="_p3oPVxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBcBggEeGPGcdgqrfNFQ" name="metadata" views="_p3oPWRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ReturnAction/metadata"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ReturnAction"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBcRggEeGPGcdgqrfNFQ" name="StatusCode" views="_p3oPWhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBchggEeGPGcdgqrfNFQ" name="number" views="_p3oPXBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//StatusCode/number"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//StatusCode"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBcxggEeGPGcdgqrfNFQ" name="Metadata" views="_p3oPXRggEeGPGcdgqrfNFQ">
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Metadata"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBdBggEeGPGcdgqrfNFQ" name="Constant" views="_p3oPXhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBdRggEeGPGcdgqrfNFQ" name="type" views="_p3oPYBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Constant/type"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBdhggEeGPGcdgqrfNFQ" name="stringRepresentation" views="_p3oPYRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Constant/stringRepresentation"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//Constant"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBdxggEeGPGcdgqrfNFQ" name="BinaryOperation" views="_p3oPYhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBeBggEeGPGcdgqrfNFQ" name="optype" views="_p3oPZBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//BinaryOperation/optype"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//BinaryOperation"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBeRggEeGPGcdgqrfNFQ" name="BinOpType" views="_p3oPZRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBehggEeGPGcdgqrfNFQ" name="resultType" views="_p3oPZxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//OpType/resultType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBexggEeGPGcdgqrfNFQ" name="name" views="_p3oPaBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//OpType/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBfBggEeGPGcdgqrfNFQ" name="firstOpType" views="_p3oPaRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//BinOpType/firstOpType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBfRggEeGPGcdgqrfNFQ" name="secondOpType" views="_p3oPahggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//BinOpType/secondOpType"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//BinOpType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBfhggEeGPGcdgqrfNFQ" name="AttributeReference" views="_p3oPaxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBfxggEeGPGcdgqrfNFQ" name="referencedAttribute" views="_p3oPbRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//AttributeReference/referencedAttribute"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//AttributeReference"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBgBggEeGPGcdgqrfNFQ" name="InternalLinkReference" views="_p3oPbhggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBgRggEeGPGcdgqrfNFQ" name="referencedLink" views="_p3oPcBggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//InternalLinkReference/referencedLink"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//InternalLinkReference"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBghggEeGPGcdgqrfNFQ" name="MTLinkReference" views="_p3oPcRggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBgxggEeGPGcdgqrfNFQ" name="referencedMTLink" views="_p3oPcxggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//MTLinkReference/referencedMTLink"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//MTLinkReference"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBhBggEeGPGcdgqrfNFQ" name="MtElementReference" views="_p3oPdBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBhRggEeGPGcdgqrfNFQ" name="referencedMTElement" views="_p3oPdhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//MtElementReference/referencedMTElement"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//MtElementReference"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBhhggEeGPGcdgqrfNFQ" name="DeletedState" views="_p3oPdxggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBhxggEeGPGcdgqrfNFQ" name="transitions" views="_p3oPeRggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//State/transitions"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBiBggEeGPGcdgqrfNFQ" name="name" views="_p3oPehggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EAttribute" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//State/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBiRggEeGPGcdgqrfNFQ" name="supportedMethods" views="_p3oPexggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//State/supportedMethods"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//DeletedState"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_p3nBihggEeGPGcdgqrfNFQ" name="ExternalLinkReference" views="_p3oPfBggEeGPGcdgqrfNFQ">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_p3nBixggEeGPGcdgqrfNFQ" name="referencedExternalLink" views="_p3oPfhggEeGPGcdgqrfNFQ">
+          <model xsi:type="ecore:EReference" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ExternalLinkReference/referencedExternalLink"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/resource/de.van_porten.vrest.core/model/RestBehavior.ecore#//ExternalLinkReference"/>
+      </bindings>
+    </categories>
+    <model href="platform:/resource/de.van_porten.vrest.core/model/Rest.genmodel#//restbehavior"/>
+  </eef-components:PropertiesEditionContext>
+  <eef-views:ViewsRepository xmi:id="_p3nBjBggEeGPGcdgqrfNFQ" documentation="Views repository for reststructure GenPackage" name="reststructure">
+    <RepositoryKind>SWT</RepositoryKind>
+    <RepositoryKind>Form</RepositoryKind>
+    <categories xmi:id="_p3nBjRggEeGPGcdgqrfNFQ" name="reststructure">
+      <views xmi:id="_p3nBjhggEeGPGcdgqrfNFQ" name="Attribute">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBjxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBkBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBkRggEeGPGcdgqrfNFQ" name="attrType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBkhggEeGPGcdgqrfNFQ" name="LinkCollection">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBkxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBlBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBlRggEeGPGcdgqrfNFQ" name="Parameter">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBlhggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBlxggEeGPGcdgqrfNFQ" name="paramType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBmBggEeGPGcdgqrfNFQ" name="Method">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBmRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBmhggEeGPGcdgqrfNFQ" name="consumed">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBmxggEeGPGcdgqrfNFQ" name="produced">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBnBggEeGPGcdgqrfNFQ" name="methodtype">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBnRggEeGPGcdgqrfNFQ" name="parameters">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBnhggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBnxggEeGPGcdgqrfNFQ" name="MediaType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBoBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBoRggEeGPGcdgqrfNFQ" name="containedMTElements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBohggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBoxggEeGPGcdgqrfNFQ" name="containedMTLinks">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBpBggEeGPGcdgqrfNFQ" name="containedMTLinkCollections">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBpRggEeGPGcdgqrfNFQ" name="Representation">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBphggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBpxggEeGPGcdgqrfNFQ" name="containedRepElements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBqBggEeGPGcdgqrfNFQ" name="mediatype">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBqRggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBqhggEeGPGcdgqrfNFQ" name="containedRepLinks">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBqxggEeGPGcdgqrfNFQ" name="containedRepLinkCollections">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBrBggEeGPGcdgqrfNFQ" name="RepresentationElement">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBrRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBrhggEeGPGcdgqrfNFQ" name="correspondingElement">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBrxggEeGPGcdgqrfNFQ" name="repElemType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBsBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBsRggEeGPGcdgqrfNFQ" name="MethodType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBshggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBsxggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBtBggEeGPGcdgqrfNFQ" name="RelationType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBtRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBthggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBtxggEeGPGcdgqrfNFQ" name="InternalLink">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nBuBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBuRggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBuhggEeGPGcdgqrfNFQ" name="relType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nBuxggEeGPGcdgqrfNFQ" name="target">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nBvBggEeGPGcdgqrfNFQ" name="ExternalLink">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noMBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noMRggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noMhggEeGPGcdgqrfNFQ" name="relType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noMxggEeGPGcdgqrfNFQ" name="ExternalLinkCollection">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noNBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noNRggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noNhggEeGPGcdgqrfNFQ" name="extElements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noNxggEeGPGcdgqrfNFQ" name="InternalLinkCollection">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noOBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noORggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noOhggEeGPGcdgqrfNFQ" name="intElements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noOxggEeGPGcdgqrfNFQ" name="PrimitiveDataType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noPBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noPRggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noPhggEeGPGcdgqrfNFQ" name="CollectionType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noPxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noQBggEeGPGcdgqrfNFQ" name="elementType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noQRggEeGPGcdgqrfNFQ" name="SimpleIdentifier">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noQhggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noQxggEeGPGcdgqrfNFQ" name="identifier">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noRBggEeGPGcdgqrfNFQ" name="ComplexIdentifierPattern">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noRRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noRhggEeGPGcdgqrfNFQ" name="idParams">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noRxggEeGPGcdgqrfNFQ" name="idAttrs">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noSBggEeGPGcdgqrfNFQ" name="MediaTypeElement">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noSRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noShggEeGPGcdgqrfNFQ" name="mtelemType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noSxggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noTBggEeGPGcdgqrfNFQ" name="SubresourceType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noTRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noThggEeGPGcdgqrfNFQ" name="identifer">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noTxggEeGPGcdgqrfNFQ" name="resourceelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noUBggEeGPGcdgqrfNFQ" name="methods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noURggEeGPGcdgqrfNFQ" name="creators">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noUhggEeGPGcdgqrfNFQ" name="states">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noUxggEeGPGcdgqrfNFQ" name="initialState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noVBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noVRggEeGPGcdgqrfNFQ" name="isSingleton">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noVhggEeGPGcdgqrfNFQ" name="createOnStart">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noVxggEeGPGcdgqrfNFQ" name="containingType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noWBggEeGPGcdgqrfNFQ" name="AggregationResourceType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noWRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noWhggEeGPGcdgqrfNFQ" name="identifer">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noWxggEeGPGcdgqrfNFQ" name="resourceelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noXBggEeGPGcdgqrfNFQ" name="methods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noXRggEeGPGcdgqrfNFQ" name="creators">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noXhggEeGPGcdgqrfNFQ" name="states">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noXxggEeGPGcdgqrfNFQ" name="initialState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noYBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noYRggEeGPGcdgqrfNFQ" name="isSingleton">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noYhggEeGPGcdgqrfNFQ" name="createOnStart">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noYxggEeGPGcdgqrfNFQ" name="elementTypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noZBggEeGPGcdgqrfNFQ" name="PrimaryResourceType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noZRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noZhggEeGPGcdgqrfNFQ" name="identifer">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noZxggEeGPGcdgqrfNFQ" name="resourceelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noaBggEeGPGcdgqrfNFQ" name="methods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noaRggEeGPGcdgqrfNFQ" name="creators">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noahggEeGPGcdgqrfNFQ" name="states">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noaxggEeGPGcdgqrfNFQ" name="initialState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nobBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nobRggEeGPGcdgqrfNFQ" name="isSingleton">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nobhggEeGPGcdgqrfNFQ" name="createOnStart">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nobxggEeGPGcdgqrfNFQ" name="ActivityResourceType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nocBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nocRggEeGPGcdgqrfNFQ" name="identifer">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nochggEeGPGcdgqrfNFQ" name="resourceelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nocxggEeGPGcdgqrfNFQ" name="methods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nodBggEeGPGcdgqrfNFQ" name="creators">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nodRggEeGPGcdgqrfNFQ" name="states">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nodhggEeGPGcdgqrfNFQ" name="initialState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nodxggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noeBggEeGPGcdgqrfNFQ" name="isSingleton">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noeRggEeGPGcdgqrfNFQ" name="createOnStart">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noehggEeGPGcdgqrfNFQ" name="PagingResourceType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noexggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nofBggEeGPGcdgqrfNFQ" name="identifer">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nofRggEeGPGcdgqrfNFQ" name="resourceelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nofhggEeGPGcdgqrfNFQ" name="methods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nofxggEeGPGcdgqrfNFQ" name="creators">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nogBggEeGPGcdgqrfNFQ" name="states">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nogRggEeGPGcdgqrfNFQ" name="initialState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noghggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nogxggEeGPGcdgqrfNFQ" name="isSingleton">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nohBggEeGPGcdgqrfNFQ" name="createOnStart">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nohRggEeGPGcdgqrfNFQ" name="pagedType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nohhggEeGPGcdgqrfNFQ" name="ProjectionResourceType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nohxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noiBggEeGPGcdgqrfNFQ" name="identifer">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noiRggEeGPGcdgqrfNFQ" name="resourceelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noihggEeGPGcdgqrfNFQ" name="methods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noixggEeGPGcdgqrfNFQ" name="creators">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nojBggEeGPGcdgqrfNFQ" name="states">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nojRggEeGPGcdgqrfNFQ" name="initialState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nojhggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nojxggEeGPGcdgqrfNFQ" name="isSingleton">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nokBggEeGPGcdgqrfNFQ" name="createOnStart">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nokRggEeGPGcdgqrfNFQ" name="projectedType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nokhggEeGPGcdgqrfNFQ" name="ListResourceType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nokxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nolBggEeGPGcdgqrfNFQ" name="identifer">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nolRggEeGPGcdgqrfNFQ" name="resourceelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nolhggEeGPGcdgqrfNFQ" name="methods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nolxggEeGPGcdgqrfNFQ" name="creators">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nomBggEeGPGcdgqrfNFQ" name="states">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nomRggEeGPGcdgqrfNFQ" name="initialState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nomhggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nomxggEeGPGcdgqrfNFQ" name="isSingleton">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nonBggEeGPGcdgqrfNFQ" name="createOnStart">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nonRggEeGPGcdgqrfNFQ" name="listElementType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nonhggEeGPGcdgqrfNFQ" name="FilterResourceType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nonxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nooBggEeGPGcdgqrfNFQ" name="identifer">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nooRggEeGPGcdgqrfNFQ" name="resourceelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noohggEeGPGcdgqrfNFQ" name="methods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nooxggEeGPGcdgqrfNFQ" name="creators">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nopBggEeGPGcdgqrfNFQ" name="states">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nopRggEeGPGcdgqrfNFQ" name="initialState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nophggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nopxggEeGPGcdgqrfNFQ" name="isSingleton">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noqBggEeGPGcdgqrfNFQ" name="createOnStart">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noqRggEeGPGcdgqrfNFQ" name="listElementType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noqhggEeGPGcdgqrfNFQ" name="MediaTypeLink">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3noqxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3norBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3norRggEeGPGcdgqrfNFQ" name="MediaTypeLinkCollection">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3norhggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3norxggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3nosBggEeGPGcdgqrfNFQ" name="RepresentationLink">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nosRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noshggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nosxggEeGPGcdgqrfNFQ" name="correspondingLink">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3notBggEeGPGcdgqrfNFQ" name="linkValue">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3notRggEeGPGcdgqrfNFQ" name="RepresentationLinkCollection">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nothggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3notxggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nouBggEeGPGcdgqrfNFQ" name="correspondingLinkCollection">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+    </categories>
+  </eef-views:ViewsRepository>
+  <eef-views:ViewsRepository xmi:id="_p3nouRggEeGPGcdgqrfNFQ" documentation="Views repository for restbehavior GenPackage" name="restbehavior">
+    <RepositoryKind>SWT</RepositoryKind>
+    <RepositoryKind>Form</RepositoryKind>
+    <categories xmi:id="_p3nouhggEeGPGcdgqrfNFQ" name="restbehavior">
+      <views xmi:id="_p3nouxggEeGPGcdgqrfNFQ" name="Creator">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3novBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3novRggEeGPGcdgqrfNFQ" name="consumedMT">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3novhggEeGPGcdgqrfNFQ" name="creatorParams">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3novxggEeGPGcdgqrfNFQ" name="BehaviorSpecification">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nowBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+        </elements>
+      </views>
+      <views xmi:id="_p3nowRggEeGPGcdgqrfNFQ" name="State">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3nowhggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3nowxggEeGPGcdgqrfNFQ" name="transitions">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noxBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3noxRggEeGPGcdgqrfNFQ" name="supportedMethods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3noxhggEeGPGcdgqrfNFQ" name="Transition">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPQBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPQRggEeGPGcdgqrfNFQ" name="trigger">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPQhggEeGPGcdgqrfNFQ" name="targetState">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPQxggEeGPGcdgqrfNFQ" name="Condition">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPRBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPRRggEeGPGcdgqrfNFQ" name="InternalMessage">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPRhggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPRxggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPSBggEeGPGcdgqrfNFQ" name="MessageAction">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPSRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPShggEeGPGcdgqrfNFQ" name="message">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPSxggEeGPGcdgqrfNFQ" name="ConditionalAction">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPTBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPTRggEeGPGcdgqrfNFQ" name="CreateAction">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPThggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPTxggEeGPGcdgqrfNFQ" name="creator">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPUBggEeGPGcdgqrfNFQ" name="ListAddAction"/>
+      <views xmi:id="_p3oPURggEeGPGcdgqrfNFQ" name="ListRemoveAction"/>
+      <views xmi:id="_p3oPUhggEeGPGcdgqrfNFQ" name="ActionSequence">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPUxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPVBggEeGPGcdgqrfNFQ" name="actionelements">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPVRggEeGPGcdgqrfNFQ" name="UpdateAction">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPVhggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPVxggEeGPGcdgqrfNFQ" name="ReturnAction">
+        <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPWRggEeGPGcdgqrfNFQ" name="metadata">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPWhggEeGPGcdgqrfNFQ" name="StatusCode" explicit="false">
+        <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPXBggEeGPGcdgqrfNFQ" name="number">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPXRggEeGPGcdgqrfNFQ" name="Metadata"/>
+      <views xmi:id="_p3oPXhggEeGPGcdgqrfNFQ" name="Constant">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPXxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPYBggEeGPGcdgqrfNFQ" name="type">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPYRggEeGPGcdgqrfNFQ" name="stringRepresentation">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPYhggEeGPGcdgqrfNFQ" name="BinaryOperation">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPYxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPZBggEeGPGcdgqrfNFQ" name="optype">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPZRggEeGPGcdgqrfNFQ" name="BinOpType">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPZhggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPZxggEeGPGcdgqrfNFQ" name="resultType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPaBggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPaRggEeGPGcdgqrfNFQ" name="firstOpType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPahggEeGPGcdgqrfNFQ" name="secondOpType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPaxggEeGPGcdgqrfNFQ" name="AttributeReference">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPbBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPbRggEeGPGcdgqrfNFQ" name="referencedAttribute">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPbhggEeGPGcdgqrfNFQ" name="InternalLinkReference">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPbxggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPcBggEeGPGcdgqrfNFQ" name="referencedLink">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPcRggEeGPGcdgqrfNFQ" name="MTLinkReference">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPchggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPcxggEeGPGcdgqrfNFQ" name="referencedMTLink">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPdBggEeGPGcdgqrfNFQ" name="MtElementReference">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPdRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPdhggEeGPGcdgqrfNFQ" name="referencedMTElement">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPdxggEeGPGcdgqrfNFQ" name="DeletedState">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPeBggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPeRggEeGPGcdgqrfNFQ" name="transitions">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPehggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPexggEeGPGcdgqrfNFQ" name="supportedMethods">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_p3oPfBggEeGPGcdgqrfNFQ" name="ExternalLinkReference">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPfRggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPfhggEeGPGcdgqrfNFQ" name="referencedExternalLink">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+    </categories>
+  </eef-views:ViewsRepository>
+  <eef-views:ViewsRepository xmi:id="_p3oPfxggEeGPGcdgqrfNFQ" documentation="Views repository for rest GenPackage" name="rest">
+    <RepositoryKind>SWT</RepositoryKind>
+    <RepositoryKind>Form</RepositoryKind>
+    <categories xmi:id="_p3oPgBggEeGPGcdgqrfNFQ" name="rest">
+      <views xmi:id="_p3oPgRggEeGPGcdgqrfNFQ" name="RestApplicationModel">
+        <elements xsi:type="eef-views:Container" xmi:id="_p3oPghggEeGPGcdgqrfNFQ" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPgxggEeGPGcdgqrfNFQ" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPhBggEeGPGcdgqrfNFQ" name="methodTypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPhRggEeGPGcdgqrfNFQ" name="dataTypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPhhggEeGPGcdgqrfNFQ" name="mediaTypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPhxggEeGPGcdgqrfNFQ" name="resourceTypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPiBggEeGPGcdgqrfNFQ" name="relTypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_p3oPiRggEeGPGcdgqrfNFQ" name="optypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+        </elements>
+      </views>
+    </categories>
+  </eef-views:ViewsRepository>
+</xmi:XMI>

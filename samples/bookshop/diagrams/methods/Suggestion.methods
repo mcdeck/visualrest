@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="RestMethodBehaviourDiagram" name="Suggestion Resource Methods Diagram" snapToGrid="true" pictogramLinks="//@children.1/@link //@children.1/@children.0/@children.1/@link" version="0.9.0">
+  <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+  <link>
+    <businessObjects href="../../myApplication.rest#//@resourceTypes.1"/>
+  </link>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="shape-id" value="resource-type-indicator-shape"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="true" transparency="0.0" width="230" height="50" x="5" y="5">
+      <background href="../structure/new_diagram.structure#//@colors.1"/>
+      <foreground href="../structure/new_diagram.structure#//@colors.2"/>
+    </graphicsAlgorithm>
+    <link>
+      <businessObjects href="../../myApplication.rest#//@resourceTypes.1"/>
+    </link>
+    <children visible="true">
+      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" width="230" height="50" x="5" horizontalAlignment="ALIGNMENT_CENTER" value="Methods of: Suggestion">
+        <foreground href="../structure/new_diagram.structure#//@colors.2"/>
+        <font href="../structure/new_diagram.structure#//@fonts.2"/>
+      </graphicsAlgorithm>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="shape-id" value="method-container-shape"/>
+    <properties key="change-selection-border-of-shape" value="TRUE"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="600" height="300" x="650" y="140"/>
+    <link>
+      <businessObjects href="../../myApplication.rest#//@resourceTypes.1/@methods.3"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor"/>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="internal-method-header-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.2" lineWidth="1" filled="true" transparency="0.0" width="240" height="51" x="150"/>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="240" height="20" y="5" font="//@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="&lt;&lt;Method>>"/>
+      </children>
+      <children visible="true">
+        <properties key="shape-id" value="state-name"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="240" height="20" y="25" font="//@fonts.2" horizontalAlignment="ALIGNMENT_CENTER" value="POST : addReview( )"/>
+        <link>
+          <businessObjects href="../../myApplication.rest#//@resourceTypes.1/@methods.3"/>
+        </link>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="internal-method-body-shape"/>
+      <properties key="new-selection-border-of-shape" value="TRUE"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.2" lineWidth="1" filled="true" transparency="0.0" width="300" height="250" x="150" y="50"/>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="internal-consumed-types-container-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="155" height="250" y="50"/>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="internal-produced-types-container-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="155" height="250" x="445" y="50"/>
+    </children>
+  </children>
+  <colors red="227" green="238" blue="249"/>
+  <colors red="255" green="255" blue="255"/>
+  <colors/>
+  <fonts name="Arial" size="8"/>
+  <fonts name="Arial" size="8" italic="true"/>
+  <fonts name="Arial" size="8" bold="true"/>
+</pi:Diagram>

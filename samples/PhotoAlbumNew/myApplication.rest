@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest:RestApplicationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rest="http://rest/1.0" xmlns:restbehavior="http://restbehavior/1.0" xmlns:reststructure="http://reststructure/1.0" name="PhotoAlbum">
+  <methodTypes name="HTTP-POST"/>
+  <methodTypes name="HTTP-GET"/>
+  <methodTypes name="HTTP-PUT"/>
+  <methodTypes name="HTTP-DELETE"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="string"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="boolean"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="file"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="int"/>
+  <mediaTypes name="atom+entry"/>
+  <mediaTypes name="suggestion">
+    <containedMTElements mtelemType="//@dataTypes.3" name="positiveReviews"/>
+    <containedMTElements mtelemType="//@dataTypes.3" name="negativeReviews"/>
+    <containedMTElements mtelemType="//@dataTypes.0" name="statement"/>
+    <containedMTElements mtelemType="//@dataTypes.0" name="status"/>
+    <containedMTLinks name="suggestedPicture"/>
+  </mediaTypes>
+  <mediaTypes name="review">
+    <containedMTElements mtelemType="//@dataTypes.1" name="accepted"/>
+  </mediaTypes>
+  <mediaTypes name="img/png">
+    <containedMTElements mtelemType="//@dataTypes.2" name="binaryData"/>
+  </mediaTypes>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" name="Picture">
+    <resourceelements xsi:type="reststructure:Attribute" name="title" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="description" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="isExcellent" attrType="//@dataTypes.1"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="nextPicture" relType="//@relTypes.1" target="//@resourceTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="previousPicture" relType="//@relTypes.2" target="//@resourceTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="data" relType="//@relTypes.3" target="//@resourceTypes.4"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="containingAlbum" relType="//@relTypes.4" target="//@resourceTypes.1"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" name="Album">
+    <resourceelements xsi:type="reststructure:Attribute" name="title" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="description" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="containedPictures" relType="//@relTypes.0" target="//@resourceTypes.2"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ListResourceType" name="PicturesOfAlbum" listElementType="//@resourceTypes.0">
+    <resourceelements xsi:type="reststructure:InternalLink" name="album" relType="//@relTypes.4" target="//@resourceTypes.1"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ListResourceType" name="AllAlbums" listElementType="//@resourceTypes.1"/>
+  <resourceTypes xsi:type="reststructure:SubresourceType" name="PictureData" containingType="//@resourceTypes.0">
+    <resourceelements xsi:type="reststructure:Attribute" name="binaryData" attrType="//@dataTypes.2"/>
+    <methods name="get">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ReturnAction">
+          <status number="200"/>
+          <representation mediatype="//@mediaTypes.3" name="pictureData">
+            <containedRepElements correspondingElement="//@mediaTypes.3/@containedMTElements.0" repElemType="//@dataTypes.2" name="binaryData">
+              <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.4/@resourceelements.0"/>
+            </containedRepElements>
+          </representation>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.4/@methods.0"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ActivityResourceType" initialState="//@resourceTypes.5/@states.0" name="Suggestion">
+    <resourceelements xsi:type="reststructure:Attribute" name="statement" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="positiveReviews" attrType="//@dataTypes.3"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="negativeReviews" attrType="//@dataTypes.3"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="status" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="suggestedPicture" relType="//@relTypes.5" target="//@resourceTypes.0"/>
+    <methods consumed="//@mediaTypes.2" produced="//@mediaTypes.1" methodtype="//@methodTypes.0" name="addReview">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:ConditionalAction">
+            <actionCondition>
+              <conditionExpr xsi:type="restbehavior:MtElementReference" referencedMTElement="//@mediaTypes.2/@containedMTElements.0"/>
+            </actionCondition>
+            <actionIfTrue xsi:type="restbehavior:UpdateAction">
+              <elementForUpdate xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.1"/>
+              <newValue xsi:type="restbehavior:BinaryOperation" optype="//@optypes.0">
+                <firstOp xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.1"/>
+                <secondOp xsi:type="restbehavior:Constant" type="//@dataTypes.3" stringRepresentation="1"/>
+              </newValue>
+            </actionIfTrue>
+            <actionIfFalse xsi:type="restbehavior:UpdateAction">
+              <elementForUpdate xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.2"/>
+              <newValue xsi:type="restbehavior:BinaryOperation" optype="//@optypes.0">
+                <firstOp xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.2"/>
+                <secondOp xsi:type="restbehavior:Constant" type="//@dataTypes.3" stringRepresentation="1"/>
+              </newValue>
+            </actionIfFalse>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:ConditionalAction">
+            <actionCondition>
+              <conditionExpr xsi:type="restbehavior:BinaryOperation" optype="//@optypes.1">
+                <firstOp xsi:type="restbehavior:Constant" type="//@dataTypes.3" stringRepresentation="2"/>
+              </conditionExpr>
+            </actionCondition>
+            <actionIfTrue xsi:type="restbehavior:ActionSequence">
+              <actionelements xsi:type="restbehavior:UpdateAction">
+                <elementForUpdate xsi:type="restbehavior:InternalLinkReference" referencedLink="//@resourceTypes.5/@resourceelements.4">
+                  <referencedReference xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.0/@resourceelements.2"/>
+                </elementForUpdate>
+                <newValue xsi:type="restbehavior:Constant" type="//@dataTypes.1" stringRepresentation="true"/>
+              </actionelements>
+              <actionelements xsi:type="restbehavior:MessageAction" message="//@resourceTypes.5/@states.1/@transitions.0/@trigger.0"/>
+            </actionIfTrue>
+            <actionIfFalse xsi:type="restbehavior:ConditionalAction">
+              <actionCondition>
+                <conditionExpr xsi:type="restbehavior:BinaryOperation" optype="//@optypes.1">
+                  <firstOp xsi:type="restbehavior:Constant" type="//@dataTypes.3" stringRepresentation="2"/>
+                  <secondOp xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.2"/>
+                </conditionExpr>
+              </actionCondition>
+              <actionIfTrue xsi:type="restbehavior:MessageAction" message="//@resourceTypes.5/@states.1/@transitions.0/@trigger.0"/>
+            </actionIfFalse>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:ReturnAction">
+            <status number="200"/>
+            <representation mediatype="//@mediaTypes.1" name="suggestion">
+              <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.0" repElemType="//@dataTypes.3" name="positiveReviews">
+                <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.1"/>
+              </containedRepElements>
+              <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.1" repElemType="//@dataTypes.3" name="negativeReviews">
+                <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.2"/>
+              </containedRepElements>
+              <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.3" repElemType="//@dataTypes.0" name="status">
+                <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.3"/>
+              </containedRepElements>
+              <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.2" repElemType="//@dataTypes.0" name="statement">
+                <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.0"/>
+              </containedRepElements>
+              <containedRepLinks name="suggestedPicture" correspondingLink="//@mediaTypes.1/@containedMTLinks.0" linkValue="//@resourceTypes.5/@resourceelements.4"/>
+            </representation>
+          </actionelements>
+        </action>
+      </methodbehavior>
+    </methods>
+    <methods consumed="//@mediaTypes.1" produced="//@mediaTypes.1" methodtype="//@methodTypes.2" name="update">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:UpdateAction">
+            <elementForUpdate xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.0"/>
+            <newValue xsi:type="restbehavior:MtElementReference" referencedMTElement="//@mediaTypes.1/@containedMTElements.2"/>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:ConditionalAction">
+            <actionCondition>
+              <conditionExpr xsi:type="restbehavior:BinaryOperation">
+                <firstOp xsi:type="restbehavior:MtElementReference" referencedMTElement="//@mediaTypes.1/@containedMTElements.3"/>
+                <secondOp xsi:type="restbehavior:Constant" type="//@dataTypes.0" stringRepresentation="under review"/>
+              </conditionExpr>
+            </actionCondition>
+            <actionIfTrue xsi:type="restbehavior:ActionSequence">
+              <actionelements xsi:type="restbehavior:UpdateAction">
+                <elementForUpdate xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.3"/>
+                <newValue xsi:type="restbehavior:Constant" type="//@dataTypes.0" stringRepresentation="under review"/>
+              </actionelements>
+              <actionelements xsi:type="restbehavior:MessageAction" message="//@resourceTypes.5/@states.0/@transitions.0/@trigger.0"/>
+            </actionIfTrue>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:ReturnAction">
+            <status number="200"/>
+            <representation mediatype="//@mediaTypes.1" name="suggestion">
+              <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.0" repElemType="//@dataTypes.3" name="positiveReviews">
+                <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.1"/>
+              </containedRepElements>
+              <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.1" repElemType="//@dataTypes.3" name="negativeReviews">
+                <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.2"/>
+              </containedRepElements>
+              <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.3" repElemType="//@dataTypes.0" name="status">
+                <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.3"/>
+              </containedRepElements>
+              <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.2" repElemType="//@dataTypes.0" name="statement">
+                <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.0"/>
+              </containedRepElements>
+              <containedRepLinks name="suggestedPicture" correspondingLink="//@mediaTypes.1/@containedMTLinks.0" linkValue="//@resourceTypes.5/@resourceelements.4"/>
+            </representation>
+          </actionelements>
+        </action>
+      </methodbehavior>
+    </methods>
+    <methods methodtype="//@methodTypes.1" name="get">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ReturnAction">
+          <status number="200"/>
+          <representation mediatype="//@mediaTypes.1" name="suggestion">
+            <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.0" repElemType="//@dataTypes.3" name="positiveReviews">
+              <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.1"/>
+            </containedRepElements>
+            <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.1" repElemType="//@dataTypes.3" name="negativeReviews">
+              <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.2"/>
+            </containedRepElements>
+            <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.3" repElemType="//@dataTypes.0" name="status">
+              <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.3"/>
+            </containedRepElements>
+            <containedRepElements correspondingElement="//@mediaTypes.1/@containedMTElements.2" repElemType="//@dataTypes.0" name="statement">
+              <value xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.0"/>
+            </containedRepElements>
+            <containedRepLinks name="suggestedPicture" correspondingLink="//@mediaTypes.1/@containedMTLinks.0" linkValue="//@resourceTypes.5/@resourceelements.4"/>
+          </representation>
+        </action>
+      </methodbehavior>
+    </methods>
+    <methods methodtype="//@methodTypes.3" name="delete">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:UpdateAction">
+            <elementForUpdate xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.3"/>
+            <newValue xsi:type="restbehavior:Constant" type="//@dataTypes.0" stringRepresentation="deleted"/>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:MessageAction" message="//@resourceTypes.5/@states.0/@transitions.1/@trigger.0"/>
+          <actionelements xsi:type="restbehavior:ReturnAction">
+            <status number="204"/>
+          </actionelements>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.5/@methods.2 //@resourceTypes.5/@methods.1 //@resourceTypes.5/@methods.3">
+      <transitions targetState="//@resourceTypes.5/@states.1">
+        <trigger xsi:type="restbehavior:InternalMessage" name="start review"/>
+      </transitions>
+      <transitions targetState="//@resourceTypes.5/@states.3">
+        <trigger xsi:type="restbehavior:InternalMessage" name="delete"/>
+      </transitions>
+    </states>
+    <states name="under review" supportedMethods="//@resourceTypes.5/@methods.0 //@resourceTypes.5/@methods.2">
+      <entering>
+        <action xsi:type="restbehavior:UpdateAction">
+          <elementForUpdate xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.3"/>
+          <newValue xsi:type="restbehavior:Constant" type="//@dataTypes.0" stringRepresentation="under review"/>
+        </action>
+      </entering>
+      <transitions targetState="//@resourceTypes.5/@states.2">
+        <trigger xsi:type="restbehavior:InternalMessage" name="finishReview"/>
+      </transitions>
+    </states>
+    <states name="done" supportedMethods="//@resourceTypes.5/@methods.2">
+      <entering>
+        <action xsi:type="restbehavior:UpdateAction">
+          <elementForUpdate xsi:type="restbehavior:AttributeReference" referencedAttribute="//@resourceTypes.5/@resourceelements.3"/>
+          <newValue xsi:type="restbehavior:Constant" type="//@dataTypes.0" stringRepresentation="done"/>
+        </action>
+      </entering>
+    </states>
+    <states xsi:type="restbehavior:DeletedState" name="deleted"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:FilterResourceType" name="SuggestionsUnderReview" listElementType="//@resourceTypes.5"/>
+  <resourceTypes xsi:type="reststructure:ListResourceType" name="AllSuggestions" listElementType="//@resourceTypes.5"/>
+  <relTypes name="elements"/>
+  <relTypes name="next"/>
+  <relTypes name="prev"/>
+  <relTypes name="enclosed"/>
+  <relTypes name="parent"/>
+  <relTypes name="related"/>
+  <optypes xsi:type="restbehavior:BinOpType" resultType="//@dataTypes.3" name="intAdd"/>
+  <optypes xsi:type="restbehavior:BinOpType" resultType="//@dataTypes.1" name="lessThanInt"/>
+  <optypes xsi:type="restbehavior:BinOpType" resultType="//@dataTypes.1" name="equalInt"/>
+  <optypes xsi:type="restbehavior:BinOpType" resultType="//@dataTypes.1" name="stringEqual"/>
+</rest:RestApplicationModel>

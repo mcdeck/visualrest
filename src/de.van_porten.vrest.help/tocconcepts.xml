@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Concepts" link_to="toc.xml#concepts"> 
+	<topic label="Diagram Types"  href="html/concepts/diagram_types.html"> 
+		<topic label="Resource Structure Diagram" href="html/concepts/diagram_structure.html" />
+  <topic href="html/concepts/diagram_overview.html" label="Resource Overview Diagram">
+  </topic>
+  <topic href="html/concepts/diagram_states.html" label="Resource States Diagram">
+  </topic>
+  <topic href="html/concepts/diagram_behaviour.html" label="Resource Method Behaviour Diagram">
+  </topic> 
+	</topic>
+	<topic label="Elements of Visual REST">
+		<topic href="html/concepts/elements_structure.html" label="Resource Structure">
+  </topic>
+  <topic href="html/concepts/elements_states.html" label="Resource States">
+  </topic>
+  <topic href="html/concepts/elements_behaviour.html" label="Resource Method Behaviour">
+  </topic>
+  <topic href="html/concepts/elements_overview.html" label="Resource Overview">
+  </topic> 
+	</topic> 
+</toc>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF8"?>
+<rest:RestApplicationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rest="http://rest/1.0" xmlns:restbehavior="http://restbehavior/1.0" xmlns:reststructure="http://reststructure/1.0" name="RESTful Application">
+  <methodTypes name="POST"/>
+  <methodTypes name="GET"/>
+  <methodTypes name="PUT"/>
+  <methodTypes name="DELETE"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="string"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="boolean"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="int"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="file"/>
+  <mediaTypes name="atom+entry"/>
+  <mediaTypes name="suggestion">
+    <containedMTElements mtelemType="//@dataTypes.3" name="positiveReviews"/>
+    <containedMTElements mtelemType="//@dataTypes.3" name="negativeReviews"/>
+    <containedMTElements mtelemType="//@dataTypes.0" name="statement"/>
+    <containedMTElements mtelemType="//@dataTypes.0" name="status"/>
+  </mediaTypes>
+  <mediaTypes name="review">
+    <containedMTElements mtelemType="//@dataTypes.1" name="accepted"/>
+  </mediaTypes>
+  <mediaTypes name="img/png">
+    <containedMTElements mtelemType="//@dataTypes.2" name="binaryData"/>
+  </mediaTypes>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" initialState="//@resourceTypes.0/@states.0" name="Picture">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/picture/{id}"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="title" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="description" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="isExcellent" attrType="//@dataTypes.1"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="album" target="//@resourceTypes.1"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="next" target="//@resourceTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="previous" target="//@resourceTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="data" target="//@resourceTypes.5"/>
+    <states name="created">
+      <transitions targetState="//@resourceTypes.0/@states.1">
+        <trigger xsi:type="restbehavior:InternalMessage" name="message1"/>
+      </transitions>
+    </states>
+    <states name="NewState">
+      <transitions targetState="//@resourceTypes.0/@states.2">
+        <trigger xsi:type="restbehavior:InternalMessage" name="message2"/>
+      </transitions>
+    </states>
+    <states name="NewState"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" initialState="//@resourceTypes.1/@states.0" name="Album">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="title" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="description" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="picture" target="//@resourceTypes.4"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ActivityResourceType" initialState="//@resourceTypes.2/@states.0" name="Suggestion">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/suggestion/{id}"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="positiveReviews" attrType="//@dataTypes.2"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="negativeReviews" attrType="//@dataTypes.2"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="statement" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="status" attrType="//@dataTypes.0"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="picture" target="//@resourceTypes.0"/>
+    <methods consumed="//@mediaTypes.2" produced="//@mediaTypes.1" methodtype="//@methodTypes.0" name="addReview">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:ConditionalAction">
+            <actionIfTrue xsi:type="restbehavior:ActionSequence">
+              <actionelements xsi:type="restbehavior:UpdateAction"/>
+              <actionelements xsi:type="restbehavior:UpdateAction"/>
+            </actionIfTrue>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:ConditionalAction">
+            <actionIfTrue xsi:type="restbehavior:ActionSequence">
+              <actionelements xsi:type="restbehavior:UpdateAction"/>
+              <actionelements xsi:type="restbehavior:MessageAction"/>
+              <actionelements xsi:type="restbehavior:ConditionalAction">
+                <actionIfTrue xsi:type="restbehavior:MessageAction"/>
+              </actionelements>
+            </actionIfTrue>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:ReturnAction">
+            <status number="404"/>
+          </actionelements>
+        </action>
+      </methodbehavior>
+    </methods>
+    <methods consumed="//@mediaTypes.1" produced="//@mediaTypes.1" methodtype="//@methodTypes.2" name="update">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:UpdateAction"/>
+          <actionelements xsi:type="restbehavior:ConditionalAction">
+            <actionIfTrue xsi:type="restbehavior:ActionSequence">
+              <actionelements xsi:type="restbehavior:UpdateAction"/>
+              <actionelements xsi:type="restbehavior:MessageAction"/>
+            </actionIfTrue>
+          </actionelements>
+          <actionelements xsi:type="restbehavior:ReturnAction">
+            <status number="404"/>
+          </actionelements>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created">
+      <transitions targetState="//@resourceTypes.2/@states.1">
+        <trigger xsi:type="restbehavior:InternalMessage" name="startReview"/>
+      </transitions>
+      <transitions targetState="//@resourceTypes.2/@states.2">
+        <trigger xsi:type="restbehavior:InternalMessage" name="delete"/>
+      </transitions>
+    </states>
+    <states name="under review">
+      <transitions targetState="//@resourceTypes.2/@states.3">
+        <trigger xsi:type="restbehavior:InternalMessage" name="finishReview"/>
+      </transitions>
+    </states>
+    <states name="deleted"/>
+    <states name="done"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ListResourceType" initialState="//@resourceTypes.3/@states.0" name="AllSuggestions" listElementType="//@resourceTypes.2">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/suggestion"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ListResourceType" initialState="//@resourceTypes.4/@states.0" name="PicturesOfAlbum" listElementType="//@resourceTypes.0">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/picturesOfAlbum/{id}"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="album" target="//@resourceTypes.1"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:SubresourceType" initialState="//@resourceTypes.5/@states.0" name="PictureData" containingType="//@resourceTypes.0">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/picture/{id}/data"/>
+    <resourceelements xsi:type="reststructure:Attribute" name="binaryData" attrType="//@dataTypes.3"/>
+    <methods produced="//@mediaTypes.3" methodtype="//@methodTypes.1" name="get">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ReturnAction">
+          <status number="200"/>
+          <representation mediatype="//@mediaTypes.3" name="pictureData"/>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.5/@methods.0"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:FilterResourceType" initialState="//@resourceTypes.6/@states.0" name="SuggestionsUnderReview" listElementType="//@resourceTypes.2">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/suggestsion/?type=underreview"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ListResourceType" initialState="//@resourceTypes.7/@states.0" name="AllAlbums" listElementType="//@resourceTypes.1">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/album"/>
+    <states name="created"/>
+  </resourceTypes>
+</rest:RestApplicationModel>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Samples" link_to="toc.xml#samples"> 
+	<topic label="Bookshop"  href="html/samples/maintopic.html"> 
+		<topic label="Sub Topic" href="html/samples/subtopic.html" /> 
+	</topic>
+	<topic label="Photoalbum">
+		<topic label="Sub Topic 2" href="html/samples/subtopic2.html" /> 
+	</topic>
+ <topic label="Mindmap">
+    <topic label="Topic">
+    </topic>
+ </topic> 
+</toc>

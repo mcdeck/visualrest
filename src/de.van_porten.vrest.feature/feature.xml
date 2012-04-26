@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.van_porten.vrest.feature"
+      label="Visual REST Feature"
+      version="1.0.0.qualifier"
+      provider-name="van-porten.de"
+      plugin="de.van_porten.vrest.bundle"
+      colocation-affinity="de.van-porten.vrest.feature">
+
+   <description url="about.html">
+      The visual REST graphical editor
+(c) 2011-2012 Oliver van Porten
+
+May contain nuts and bolts.
+   </description>
+
+   <copyright>
+      Copyright 2011-2012 Oliver van Porten
+
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+or implied. See the License for the specific language governing
+permissions and limitations under the License.
+   </copyright>
+
+   <license url="license.html">
+      test
+   </license>
+
+   <url>
+      <discovery label="Graphiti 0.8.1 Update Site" url="http://download.eclipse.org/graphiti/updates/0.8.1"/>
+      <discovery label="Eclipse Indigo Discovery Site" url="http://download.eclipse.org/releases/indigo"/>
+   </url>
+
+   <includes
+         id="de.van_porten.vrest.core.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="de.van_porten.vrest.help.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="de.van_porten.vrest.ui.feature"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.eclipse.ui" version="3.6.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.intro"/>
+   </requires>
+
+   <plugin
+         id="de.van_porten.vrest.bundle"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

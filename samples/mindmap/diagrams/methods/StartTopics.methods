@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="RestMethodBehaviourDiagram" name="StartTopics Resource Methods Diagram" snapToGrid="true" pictogramLinks="//@children.1/@link //@children.1/@children.0/@children.1/@link //@children.1/@children.2/@children.0/@link //@children.1/@children.3/@children.0/@link //@children.1/@children.4/@link //@children.1/@children.5/@link //@children.1/@children.5/@children.3/@children.0/@link" version="0.9.0">
+  <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+  <link>
+    <businessObjects href="../../myApplication.rest#//@resourceTypes.1"/>
+  </link>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="shape-id" value="resource-type-indicator-shape"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="true" transparency="0.0" width="230" height="50" x="5" y="5">
+      <background href="../structure/app.structure#//@colors.1"/>
+      <foreground href="../structure/app.structure#//@colors.2"/>
+    </graphicsAlgorithm>
+    <link>
+      <businessObjects href="../../myApplication.rest#//@resourceTypes.1"/>
+    </link>
+    <children visible="true">
+      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" width="230" height="50" x="5" horizontalAlignment="ALIGNMENT_CENTER" value="Methods of: StartTopics">
+        <foreground href="../structure/app.structure#//@colors.2"/>
+        <font href="../structure/app.structure#//@fonts.2"/>
+      </graphicsAlgorithm>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="shape-id" value="method-container-shape"/>
+    <properties key="change-selection-border-of-shape" value="TRUE"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="600" height="300" x="-40" y="80"/>
+    <link>
+      <businessObjects href="../../myApplication.rest#//@resourceTypes.1/@methods.1"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor"/>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="internal-method-header-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.2" lineWidth="1" filled="true" transparency="0.0" width="240" height="51" x="150"/>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="240" height="20" y="5" font="//@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="&lt;&lt;Method>>"/>
+      </children>
+      <children visible="true">
+        <properties key="shape-id" value="state-name"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="240" height="20" y="25" font="//@fonts.2" horizontalAlignment="ALIGNMENT_CENTER" value="POST : addTopic( )"/>
+        <link>
+          <businessObjects href="../../myApplication.rest#//@resourceTypes.1/@methods.1"/>
+        </link>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="internal-method-body-shape"/>
+      <properties key="new-selection-border-of-shape" value="TRUE"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.2" lineWidth="1" filled="true" transparency="0.0" width="300" height="250" x="150" y="50"/>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="internal-consumed-types-container-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="155" height="250" y="50"/>
+      <children xsi:type="pi:ContainerShape" visible="true">
+        <properties key="shape-id" value="internal-mediatype-shape"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="155" height="30" y="5"/>
+        <link>
+          <businessObjects href="../../myApplication.rest#//@mediaTypes.2"/>
+        </link>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="95" height="30" font="//@fonts.1" horizontalAlignment="ALIGNMENT_RIGHT" value="topic"/>
+        </children>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.2" lineWidth="2" filled="false" transparency="0.0">
+            <points x="105" y="15"/>
+            <points x="150" y="15"/>
+          </graphicsAlgorithm>
+        </children>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Ellipse" background="//@colors.2" foreground="//@colors.2" lineWidth="2" filled="true" transparency="0.0" width="10" height="10" x="145" y="10"/>
+        </children>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="2" filled="false" transparency="0.0" x="106" y="15">
+            <points x="-5" y="5"/>
+            <points/>
+            <points x="-5" y="-5"/>
+          </graphicsAlgorithm>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="internal-produced-types-container-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="155" height="250" x="445" y="50"/>
+      <children xsi:type="pi:ContainerShape" visible="true">
+        <properties key="shape-id" value="internal-mediatype-shape"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="155" height="30" y="5"/>
+        <link>
+          <businessObjects href="../../myApplication.rest#//@mediaTypes.2"/>
+        </link>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Ellipse" background="//@colors.2" foreground="//@colors.2" lineWidth="2" filled="true" transparency="0.0" width="10" height="10" y="10"/>
+        </children>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Polyline" background="//@colors.2" foreground="//@colors.2" lineWidth="2" filled="true" transparency="0.0">
+            <points x="50" y="15"/>
+            <points x="5" y="15"/>
+          </graphicsAlgorithm>
+        </children>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Polygon" lineWidth="2" filled="true" transparency="0.0" x="50" y="15">
+            <points x="-5" y="5"/>
+            <points/>
+            <points x="-5" y="-5"/>
+          </graphicsAlgorithm>
+        </children>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="95" height="30" x="55" font="//@fonts.1" value="topic"/>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="shape-id" value="action-container-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="180" height="60" x="194" y="78"/>
+      <link>
+        <businessObjects href="../../myApplication.rest#//@resourceTypes.1/@methods.1/@methodbehavior/@action/@actionelements.0"/>
+      </link>
+      <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.1"/>
+      <children xsi:type="pi:ContainerShape" visible="true">
+        <properties key="shape-id" value="vrest.ui.diagram.method.action.internal-icon-container"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="50" height="60"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Image" lineWidth="1" transparency="0.0" width="50" height="60" id=" de.van_porten.graphiti.ui.diagram.icons.methods.createaction_symbol" stretchH="false" stretchV="false" proportional="false"/>
+      </children>
+      <children visible="true">
+        <properties key="shape-id" value="vrest.ui.diagram.method.action.internal-stereotype-label"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="125" height="15" x="55" y="5" font="//@fonts.1" value="&lt;&lt;CreateAction>>"/>
+      </children>
+      <children xsi:type="pi:ContainerShape" visible="true">
+        <properties key="shape-id" value="vrest.ui.diagram.method.action.internal-additional-text-container"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="125" height="40" x="55" y="25"/>
+        <children visible="true">
+          <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" font="//@fonts.0" verticalAlignment="ALIGNMENT_TOP" value="???"/>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="shape-id" value="action-container-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="180" height="60" x="194" y="208"/>
+      <link>
+        <businessObjects href="../../myApplication.rest#//@resourceTypes.1/@methods.1/@methodbehavior/@action/@actionelements.1"/>
+      </link>
+      <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.1"/>
+      <children xsi:type="pi:ContainerShape" visible="true">
+        <properties key="shape-id" value="vrest.ui.diagram.method.action.internal-icon-container"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="50" height="60"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Polygon" background="//@colors.3" foreground="//@colors.2" lineWidth="1" filled="true" transparency="0.0" width="50" height="60">
+          <points before="5" after="5"/>
+          <points x="50" before="15" after="15"/>
+          <points x="50" y="50" before="15" after="15"/>
+          <points x="25" y="50"/>
+          <points x="25" y="60" before="5" after="5"/>
+          <points y="44" before="5" after="5"/>
+          <points x="25" y="27" before="5" after="5"/>
+          <points x="25" y="37"/>
+          <points x="37" y="37" before="10" after="10"/>
+          <points x="37" y="13" before="15" after="15"/>
+          <points y="13" before="5" after="5"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="shape-id" value="vrest.ui.diagram.method.action.internal-stereotype-label"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="125" height="15" x="55" y="5" font="//@fonts.1" value="&lt;&lt;ReturnAction>>"/>
+      </children>
+      <children xsi:type="pi:ContainerShape" visible="true">
+        <properties key="shape-id" value="vrest.ui.diagram.method.action.internal-additional-text-container"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="125" height="40" x="55" y="25"/>
+        <children visible="true">
+          <properties key="shape-id" value="return-action-status-code-shape"/>
+          <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="15" font="//@fonts.0" verticalAlignment="ALIGNMENT_TOP" value="200"/>
+          <link>
+            <businessObjects href="../../myApplication.rest#//@resourceTypes.1/@methods.1/@methodbehavior/@action/@actionelements.1/@status"/>
+          </link>
+        </children>
+        <children visible="true">
+          <properties key="shape-id" value="internal-representation-shape"/>
+          <properties key="marker-auto-layout" value="TRUE"/>
+          <properties key="marker-auto-layout-stretch-horizontal" value="TRUE"/>
+          <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="180" height="15" y="20" font="//@fonts.0" verticalAlignment="ALIGNMENT_TOP" value="topic"/>
+        </children>
+      </children>
+    </children>
+  </children>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true">
+    <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.2" lineWidth="2" filled="false" transparency="0.0"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.2" lineWidth="2" filled="false" transparency="0.0">
+        <points x="-10" y="5"/>
+        <points/>
+        <points x="-10" y="-5"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.1/@children.4/@anchors.0" end="//@children.1/@children.5/@anchors.0">
+    <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.2" lineWidth="2" filled="false" transparency="0.0"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.2" lineWidth="2" filled="false" transparency="0.0">
+        <points x="-10" y="5"/>
+        <points/>
+        <points x="-10" y="-5"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <colors red="227" green="238" blue="249"/>
+  <colors red="255" green="255" blue="255"/>
+  <colors/>
+  <colors red="128" green="128" blue="128"/>
+  <fonts name="Arial" size="8"/>
+  <fonts name="Arial" size="8" italic="true"/>
+  <fonts name="Arial" size="8" bold="true"/>
+</pi:Diagram>

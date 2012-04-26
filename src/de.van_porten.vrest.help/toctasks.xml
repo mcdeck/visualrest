@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Tasks" link_to="toc.xml#tasks">
+	<topic label="Creating a new application"  href="html/reference/maintopic.html">
+    <topic label="Sub Topic" href="html/tasks/subtopic.html" />
+  </topic>
+  <topic label="Importing an existing meta model">
+    <topic label="Sub Topic 2" href="html/tasks/subtopic2.html" />
+    <topic label="Topic">
+    </topic>
+  </topic>
+ <topic label="Exporting the model">
+    <topic label="Topic">
+    </topic>
+ </topic>
+ <topic label="Working with different views">
+    <topic label="Topic">
+    </topic>
+ </topic>
+</toc>

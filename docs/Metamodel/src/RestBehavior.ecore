@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+	name="restbehavior" nsURI="http://restbehavior/1.0" nsPrefix="restbehavior">
+	<eAnnotations references="#//Creator">
+		<details key="description"
+			value="defines the behavior of the creation of new resource" />
+	</eAnnotations>
+	<eAnnotations references="#//Creator/consumedMT">
+		<details key="description"
+			value="the media types which can be consumed by the creator" />
+	</eAnnotations>
+	<eAnnotations references="#//Creator/creatorParams">
+		<details key="description" value="parameters of the creator" />
+	</eAnnotations>
+	<eAnnotations references="#//Creator/createbehavior">
+		<details key="description" value="the behavior definition" />
+	</eAnnotations>
+	<eAnnotations references="#//BehaviorSpecification">
+		<details key="description" value="defines behavior in terms of actions" />
+	</eAnnotations>
+	<eAnnotations references="#//BehaviorSpecification/action">
+		<details key="description" value="the root action of the behavior" />
+	</eAnnotations>
+	<eAnnotations references="#//Action">
+		<details key="description" value="a simple or composite action" />
+	</eAnnotations>
+	<eAnnotations references="#//State">
+		<details key="description" value="a state of a resource type" />
+	</eAnnotations>
+	<eAnnotations references="#//State/name">
+		<details key="description" value="the name of the state" />
+	</eAnnotations>
+	<eAnnotations references="#//State/entering">
+		<details key="description"
+			value="the behavior which shall be executed when the state is entered" />
+	</eAnnotations>
+	<eAnnotations references="#//State/leaving">
+		<details key="description"
+			value="the behavior which shall be executed when the state is left" />
+	</eAnnotations>
+	<eAnnotations references="#//State/transitions">
+		<details key="description" value="the outgoing transitions of this state" />
+	</eAnnotations>
+	<eAnnotations references="#//State/supportedMethods">
+		<details key="description" value="the methods which are supported in this state" />
+	</eAnnotations>
+	<eAnnotations references="#//Transition">
+		<details key="description" value="the transition between two states" />
+	</eAnnotations>
+	<eAnnotations references="#//Transition/trigger">
+		<details key="description" value="the trigger of this transition" />
+	</eAnnotations>
+	<eAnnotations references="#//Transition/targetState">
+		<details key="description" value="the target state" />
+	</eAnnotations>
+	<eAnnotations references="#//Transition/condition">
+		<details key="description"
+			value="the condition which must be fulfilled for performing the transition" />
+	</eAnnotations>
+	<eAnnotations references="#//Transition/effect">
+		<details key="description"
+			value="the behavior which shall be executed if the transition is performed" />
+	</eAnnotations>
+	<eAnnotations references="#//Trigger">
+		<details key="description" value="a trigger for transitions" />
+	</eAnnotations>
+	<eAnnotations references="#//Condition">
+		<details key="description"
+			value="a condition which can be evaluated during runtime to true or false" />
+	</eAnnotations>
+	<eAnnotations references="#//Condition/conditionExpr">
+		<details key="description" value="the expresseion which defines the condition" />
+	</eAnnotations>
+	<eAnnotations references="#//InternalMessage">
+		<details key="description"
+			value="a message type in this system which e.g. can be used for triggering state transition" />
+	</eAnnotations>
+	<eAnnotations references="#//InternalMessage/name">
+		<details key="description" value="the name of the message type" />
+	</eAnnotations>
+	<eAnnotations references="#//MessageAction">
+		<details key="description" value="sending an message" />
+	</eAnnotations>
+	<eAnnotations references="#//MessageAction/message">
+		<details key="description" value="the message type" />
+	</eAnnotations>
+	<eAnnotations references="#//ConditionalAction">
+		<details key="description" value="allows to define conditional actions" />
+	</eAnnotations>
+	<eAnnotations references="#//ConditionalAction/actionCondition">
+		<details key="description" value="the condition" />
+	</eAnnotations>
+	<eAnnotations references="#//ConditionalAction/actionIfTrue">
+		<details key="description"
+			value="the action which should be exectued if the condition evaluated to true" />
+	</eAnnotations>
+	<eAnnotations references="#//ConditionalAction/actionIfFalse">
+		<details key="description"
+			value="the optional action which should be exectued if the condition evaluated to false" />
+	</eAnnotations>
+	<eAnnotations references="#//CreateAction">
+		<details key="description" value="allows to create a new resource" />
+	</eAnnotations>
+	<eAnnotations references="#//CreateAction/creator">
+		<details key="description" value="the creator which shall be used" />
+	</eAnnotations>
+	<eAnnotations references="#//ListAddAction">
+		<details key="description" value="allows to add an element to a list" />
+	</eAnnotations>
+	<eAnnotations references="#//ListRemoveAction">
+		<details key="description" value="allows to remove an element from a list" />
+	</eAnnotations>
+	<eAnnotations references="#//ActionSequence">
+		<details key="description"
+			value="a sequence of actions which defines the execution order" />
+	</eAnnotations>
+	<eAnnotations references="#//ActionSequence/actionelements">
+		<details key="description" value="the ordered actions" />
+	</eAnnotations>
+	<eAnnotations references="#//UpdateAction">
+		<details key="description" value="updates the value of an element" />
+	</eAnnotations>
+	<eAnnotations references="#//UpdateAction/elementForUpdate">
+		<details key="description" value="the element" />
+	</eAnnotations>
+	<eAnnotations references="#//UpdateAction/newValue">
+		<details key="description" value="the new value" />
+	</eAnnotations>
+	<eAnnotations references="#//ReturnAction">
+		<details key="description" value="defines the response of a method" />
+	</eAnnotations>
+	<eAnnotations references="#//ReturnAction/status">
+		<details key="description" value="the status code of the response" />
+	</eAnnotations>
+	<eAnnotations references="#//ReturnAction/metadata">
+		<details key="description" value="the metadata of the response" />
+	</eAnnotations>
+	<eAnnotations references="#//ReturnAction/representation">
+		<details key="description"
+			value="the optional representation contained in the response" />
+	</eAnnotations>
+	<eAnnotations references="#//StatusCode">
+		<details key="description" value="a status code" />
+	</eAnnotations>
+	<eAnnotations references="#//StatusCode/number">
+		<details key="description" value="the number of the status code" />
+	</eAnnotations>
+	<eAnnotations references="#//Metadata">
+		<details key="description" value="metadata of a request or response" />
+	</eAnnotations>
+	<eAnnotations references="#//Value">
+		<details key="description"
+			value="a value which can be used in expressions and actions" />
+	</eAnnotations>
+	<eAnnotations references="#//Constant">
+		<details key="description" value="a constant value" />
+	</eAnnotations>
+	<eAnnotations references="#//Constant/stringRepresentation">
+		<details key="description" value="a string representation of the constant value" />
+	</eAnnotations>
+	<eAnnotations references="#//Constant/type">
+		<details key="description" value="the datatype of the constant" />
+	</eAnnotations>
+	<eAnnotations references="#//Reference">
+		<details key="description"
+			value="a reference to an element; can be used in expressions" />
+	</eAnnotations>
+	<eAnnotations references="#//Operation">
+		<details key="description" value="an operation" />
+	</eAnnotations>
+	<eAnnotations references="#//BinaryOperation">
+		<details key="description" value="an operation with two operands" />
+	</eAnnotations>
+	<eAnnotations references="#//BinaryOperation/firstOp">
+		<details key="description" value="the first operand" />
+	</eAnnotations>
+	<eAnnotations references="#//BinaryOperation/secondOp">
+		<details key="description" value="the second operand" />
+	</eAnnotations>
+	<eAnnotations references="#//BinaryOperation/optype">
+		<details key="description" value="the type of the operation" />
+	</eAnnotations>
+	<eAnnotations references="#//OpType">
+		<details key="description" value="defines the type of an operation" />
+	</eAnnotations>
+	<eAnnotations references="#//OpType/name">
+		<details key="description" value="the name this OpType" />
+	</eAnnotations>
+	<eAnnotations references="#//OpType/resultType">
+		<details key="description" value="the result type of the operation" />
+	</eAnnotations>
+	<eAnnotations references="#//BinOpType">
+		<details key="description"
+			value="the type definition for an operation with two operands" />
+	</eAnnotations>
+	<eAnnotations references="#//BinOpType/firstOpType">
+		<details key="description" value="the type of the first operand" />
+	</eAnnotations>
+	<eAnnotations references="#//BinOpType/secondOpType">
+		<details key="description" value="the type of the second operand" />
+	</eAnnotations>
+	<eAnnotations references="#//AttributeReference">
+		<details key="description" value="a reference to an attribute" />
+	</eAnnotations>
+	<eAnnotations references="#//AttributeReference/referencedAttribute">
+		<details key="description" value="the referenced attribute" />
+	</eAnnotations>
+	<eAnnotations references="#//InternalLinkReference">
+		<details key="description" value="a reference to an internal link" />
+	</eAnnotations>
+	<eAnnotations references="#//InternalLinkReference/referencedLink">
+		<details key="description" value="the referenced internal link" />
+	</eAnnotations>
+	<eAnnotations references="#//InternalLinkReference/referencedReference">
+		<details key="description"
+			value="an reference to an element of the resource found when following the link;can be used to build reference chains" />
+	</eAnnotations>
+	<eAnnotations references="#//WritableReference">
+		<details key="description" value="a reference to a writable element" />
+	</eAnnotations>
+	<eAnnotations references="#//MTReference">
+		<details key="description" value="a reference to a media type element" />
+	</eAnnotations>
+	<eAnnotations references="#//MTLinkReference">
+		<details key="description" value="a reference to a link defined by a media type" />
+	</eAnnotations>
+	<eAnnotations references="#//MTLinkReference/referencedMTLink">
+		<details key="description" value="the referenced link" />
+	</eAnnotations>
+	<eAnnotations references="#//MtElementReference">
+		<details key="description"
+			value="a reference to an attribute defined by a media type" />
+	</eAnnotations>
+	<eAnnotations references="#//MtElementReference/referencedMTElement">
+		<details key="description" value="the referenced attribute" />
+	</eAnnotations>
+	<eAnnotations references="#//DeletedState">
+		<details key="description"
+			value="a special state which is reached when a resource was deleted" />
+	</eAnnotations>
+	<eAnnotations references="#//ExternalLinkReference">
+		<details key="description" value="a reference to an external link" />
+	</eAnnotations>
+	<eAnnotations references="#//ExternalLinkReference/referencedExternalLink">
+		<details key="description" value="the referenced external link" />
+	</eAnnotations>
+	<eClassifiers xsi:type="ecore:EClass" name="Creator">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="consumedMT" lowerBound="1" upperBound="-1"
+			eType="ecore:EClass RestStructure.ecore#//MediaType" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="creatorParams" upperBound="-1"
+			eType="ecore:EClass RestStructure.ecore#//Parameter" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="createbehavior" lowerBound="1" eType="#//BehaviorSpecification"
+			containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="BehaviorSpecification">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="action" eType="#//Action" containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="Action"
+		abstract="true" />
+	<eClassifiers xsi:type="ecore:EClass" name="State">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="entering" eType="#//BehaviorSpecification" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="leaving" eType="#//BehaviorSpecification" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="transitions" upperBound="-1" eType="#//Transition" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EAttribute"
+			name="name"
+			eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="supportedMethods" upperBound="-1"
+			eType="ecore:EClass RestStructure.ecore#//Method" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="Transition">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="trigger" lowerBound="1" upperBound="-1" eType="#//Trigger"
+			containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="targetState" lowerBound="1" eType="#//State" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="condition" eType="#//Condition" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="effect" eType="#//BehaviorSpecification" containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="Trigger"
+		abstract="true" />
+	<eClassifiers xsi:type="ecore:EClass" name="Condition">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="conditionExpr" lowerBound="1" eType="#//Value" containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="InternalMessage"
+		eSuperTypes="#//Trigger">
+		<eStructuralFeatures xsi:type="ecore:EAttribute"
+			name="name" lowerBound="1"
+			eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="MessageAction"
+		eSuperTypes="#//Action">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="message" lowerBound="1" eType="#//InternalMessage" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="ConditionalAction"
+		eSuperTypes="#//Action">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="actionCondition" lowerBound="1" eType="#//Condition"
+			containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="actionIfTrue" eType="#//Action" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="actionIfFalse" eType="#//Action" containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="CreateAction"
+		eSuperTypes="#//Action">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="creator" eType="#//Creator" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="ListAddAction"
+		eSuperTypes="#//Action" />
+	<eClassifiers xsi:type="ecore:EClass" name="ListRemoveAction"
+		eSuperTypes="#//Action" />
+	<eClassifiers xsi:type="ecore:EClass" name="ActionSequence"
+		eSuperTypes="#//Action">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="actionelements" lowerBound="1" upperBound="-1" eType="#//Action"
+			containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="UpdateAction"
+		eSuperTypes="#//Action">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="elementForUpdate" lowerBound="1" eType="#//WritableReference"
+			containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="newValue" lowerBound="1" eType="#//Value" containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="ReturnAction"
+		eSuperTypes="#//Action">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="status" lowerBound="1" eType="#//StatusCode" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="metadata" upperBound="-1" eType="#//Metadata" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="representation" eType="ecore:EClass RestStructure.ecore#//Representation"
+			containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="StatusCode">
+		<eStructuralFeatures xsi:type="ecore:EAttribute"
+			name="number" lowerBound="1"
+			eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="Metadata" />
+	<eClassifiers xsi:type="ecore:EClass" name="Value"
+		abstract="true" />
+	<eClassifiers xsi:type="ecore:EClass" name="Constant"
+		eSuperTypes="#//Value">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="type" lowerBound="1" eType="ecore:EClass RestStructure.ecore#//DataType" />
+		<eStructuralFeatures xsi:type="ecore:EAttribute"
+			name="stringRepresentation" lowerBound="1"
+			eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="Reference"
+		abstract="true" eSuperTypes="#//Value" />
+	<eClassifiers xsi:type="ecore:EClass" name="Operation"
+		abstract="true" eSuperTypes="#//Value" />
+	<eClassifiers xsi:type="ecore:EClass" name="BinaryOperation"
+		eSuperTypes="#//Operation">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="firstOp" lowerBound="1" eType="#//Value" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="secondOp" lowerBound="1" eType="#//Value" containment="true" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="optype" lowerBound="1" eType="#//BinOpType" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="OpType"
+		abstract="true">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="resultType" lowerBound="1"
+			eType="ecore:EClass RestStructure.ecore#//DataType" />
+		<eStructuralFeatures xsi:type="ecore:EAttribute"
+			name="name" lowerBound="1"
+			eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="BinOpType"
+		eSuperTypes="#//OpType">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="firstOpType" lowerBound="1"
+			eType="ecore:EClass RestStructure.ecore#//DataType" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="secondOpType" lowerBound="1"
+			eType="ecore:EClass RestStructure.ecore#//DataType" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="AttributeReference"
+		eSuperTypes="#//WritableReference">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="referencedAttribute" lowerBound="1"
+			eType="ecore:EClass RestStructure.ecore#//Attribute" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="InternalLinkReference"
+		eSuperTypes="#//WritableReference">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="referencedLink" lowerBound="1"
+			eType="ecore:EClass RestStructure.ecore#//InternalLink" />
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="referencedReference" eType="#//WritableReference" containment="true" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="WritableReference"
+		abstract="true" eSuperTypes="#//Reference" />
+	<eClassifiers xsi:type="ecore:EClass" name="MTReference"
+		abstract="true" eSuperTypes="#//Reference" />
+	<eClassifiers xsi:type="ecore:EClass" name="MTLinkReference"
+		eSuperTypes="#//MTReference">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="referencedMTLink" lowerBound="1"
+			eType="ecore:EClass RestStructure.ecore#//MediaTypeLink" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="MtElementReference"
+		eSuperTypes="#//MTReference">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="referencedMTElement" lowerBound="1"
+			eType="ecore:EClass RestStructure.ecore#//MediaTypeElement" />
+	</eClassifiers>
+	<eClassifiers xsi:type="ecore:EClass" name="DeletedState"
+		eSuperTypes="#//State" />
+	<eClassifiers xsi:type="ecore:EClass" name="ExternalLinkReference"
+		eSuperTypes="#//WritableReference">
+		<eStructuralFeatures xsi:type="ecore:EReference"
+			name="referencedExternalLink" eType="ecore:EClass RestStructure.ecore#//ExternalLink" />
+	</eClassifiers>
+</ecore:EPackage>

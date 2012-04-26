@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/de.van_porten.vrest.feature_1.0.0.qualifier.jar" id="de.van_porten.vrest.feature" version="1.0.0.qualifier">
+      <category name="Visual REST"/>
+   </feature>
+   <feature url="features/de.van_porten.vrest.core.feature_1.0.0.qualifier.jar" id="de.van_porten.vrest.core.feature" version="1.0.0.qualifier">
+      <category name="Visual REST"/>
+   </feature>
+   <feature url="features/de.van_porten.vrest.help.feature_1.0.0.qualifier.jar" id="de.van_porten.vrest.help.feature" version="1.0.0.qualifier">
+      <category name="Visual REST"/>
+   </feature>
+   <feature url="features/de.van_porten.vrest.tests.feature_1.0.0.qualifier.jar" id="de.van_porten.vrest.tests.feature" version="1.0.0.qualifier">
+      <category name="Visual REST"/>
+   </feature>
+   <feature url="features/de.van_porten.vrest.ui.feature_1.0.0.qualifier.jar" id="de.van_porten.vrest.ui.feature" version="1.0.0.qualifier">
+      <category name="Visual REST"/>
+   </feature>
+   <category-def name="Visual REST" label="Visual REST Features">
+      <description>
+         This category contains all the Visual REST Modeling Features
+      </description>
+   </category-def>
+</site>

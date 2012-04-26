@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Visual REST Help
+Bundle-SymbolicName: de.van_porten.vrest.help; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: van-porten.de
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

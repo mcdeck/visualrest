@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF8"?>
+<rest:RestApplicationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rest="http://rest/1.0" xmlns:restbehavior="http://restbehavior/1.0" xmlns:reststructure="http://reststructure/1.0" name="RESTful Application">
+  <methodTypes name="POST"/>
+  <methodTypes name="GET"/>
+  <methodTypes name="PUT"/>
+  <methodTypes name="DELETE"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="string"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="boolean"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="file"/>
+  <dataTypes xsi:type="reststructure:PrimitiveDataType" name="int"/>
+  <mediaTypes name="atom+entry"/>
+  <mediaTypes name="suggestion">
+    <containedMTElements mtelemType="//@dataTypes.3" name="positiveReviews"/>
+    <containedMTElements mtelemType="//@dataTypes.3" name="negativeReviews"/>
+    <containedMTElements mtelemType="//@dataTypes.0" name="statement"/>
+    <containedMTElements mtelemType="//@dataTypes.0" name="status"/>
+  </mediaTypes>
+  <mediaTypes name="review">
+    <containedMTElements mtelemType="//@dataTypes.1" name="accepted"/>
+  </mediaTypes>
+  <mediaTypes name="img/png">
+    <containedMTElements mtelemType="//@dataTypes.2" name="binaryData"/>
+  </mediaTypes>
+  <resourceTypes xsi:type="reststructure:AggregationResourceType" initialState="//@resourceTypes.0/@states.0" name="MyResource0">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ActivityResourceType" initialState="//@resourceTypes.1/@states.0" name="Suggestion">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <methods methodtype="//@methodTypes.1" name="get">
+      <methodbehavior/>
+    </methods>
+    <methods methodtype="//@methodTypes.3" name="delete">
+      <methodbehavior/>
+    </methods>
+    <methods methodtype="//@methodTypes.2" name="update">
+      <methodbehavior/>
+    </methods>
+    <methods methodtype="//@methodTypes.0" name="addReview">
+      <methodbehavior/>
+    </methods>
+    <states name="created" supportedMethods="//@resourceTypes.1/@methods.0 //@resourceTypes.1/@methods.1 //@resourceTypes.1/@methods.2">
+      <transitions targetState="//@resourceTypes.1/@states.1">
+        <trigger xsi:type="restbehavior:InternalMessage" name="startReview"/>
+      </transitions>
+      <transitions targetState="//@resourceTypes.1/@states.2">
+        <trigger xsi:type="restbehavior:InternalMessage" name="delete"/>
+      </transitions>
+    </states>
+    <states name="under review" supportedMethods="//@resourceTypes.1/@methods.3">
+      <transitions targetState="//@resourceTypes.1/@states.3">
+        <trigger xsi:type="restbehavior:InternalMessage" name="finishReview"/>
+      </transitions>
+    </states>
+    <states name="deleted"/>
+    <states name="done" supportedMethods="//@resourceTypes.1/@methods.0"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" initialState="//@resourceTypes.2/@states.0" name="MyResource1">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="link" target="//@resourceTypes.3"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:PagingResourceType" initialState="//@resourceTypes.3/@states.0" name="MyResource2">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ProjectionResourceType" initialState="//@resourceTypes.4/@states.0" name="MyResource3">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ActivityResourceType" initialState="//@resourceTypes.5/@states.0" name="MyResource4">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ListResourceType" initialState="//@resourceTypes.6/@states.0" name="MyResource5">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created" supportedMethods="//@resourceTypes.1/@methods.0 //@resourceTypes.1/@methods.2 //@resourceTypes.1/@methods.1">
+      <transitions targetState="//@resourceTypes.6/@states.1">
+        <trigger xsi:type="restbehavior:InternalMessage" name="test"/>
+      </transitions>
+    </states>
+    <states name="MyFollowupState" supportedMethods="//@resourceTypes.1/@methods.3"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:AggregationResourceType" initialState="//@resourceTypes.7/@states.0" name="MyResource6">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:FilterResourceType" initialState="//@resourceTypes.8/@states.0" name="MyResource7">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:SubresourceType" initialState="//@resourceTypes.9/@states.0" name="MyResource8" containingType="//@resourceTypes.5">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:FilterResourceType" initialState="//@resourceTypes.10/@states.0" name="MyResource10">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="link"/>
+    <methods consumed="//@mediaTypes.3" produced="//@mediaTypes.3" methodtype="//@methodTypes.0" name="processFile">
+      <parameters paramType="//@dataTypes.2"/>
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:ConditionalAction"/>
+          <actionelements xsi:type="restbehavior:MessageAction"/>
+        </action>
+      </methodbehavior>
+    </methods>
+    <creators consumedMT="//@mediaTypes.1"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" initialState="//@resourceTypes.11/@states.0" name="Book">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/book/{id}"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="author" target="//@resourceTypes.12"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" initialState="//@resourceTypes.12/@states.0" name="Author">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="booksOfAuthor" target="//@resourceTypes.16"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="biographie" target="//@resourceTypes.20"/>
+    <methods name="NewMethod">
+      <methodbehavior>
+        <action xsi:type="restbehavior:ActionSequence">
+          <actionelements xsi:type="restbehavior:CreateAction"/>
+          <actionelements xsi:type="restbehavior:UpdateAction"/>
+        </action>
+      </methodbehavior>
+    </methods>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:PagingResourceType" initialState="//@resourceTypes.13/@states.0" name="Authors" pagedType="//@resourceTypes.12">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ListResourceType" initialState="//@resourceTypes.14/@states.0" name="Books" listElementType="//@resourceTypes.11">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="book" target="//@resourceTypes.11"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="titlesOnly" target="//@resourceTypes.15"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ProjectionResourceType" initialState="//@resourceTypes.15/@states.0" name="BooksTitleOnly" projectedType="//@resourceTypes.14">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:FilterResourceType" initialState="//@resourceTypes.16/@states.0" name="BooksOfAuthor" listElementType="//@resourceTypes.17">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:AggregationResourceType" initialState="//@resourceTypes.17/@states.0" name="BooksWithAuthor" elementTypes="//@resourceTypes.11 //@resourceTypes.12">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:PrimaryResourceType" initialState="//@resourceTypes.18/@states.0" name="ShoppingCart">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="items" target="//@resourceTypes.11"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:ActivityResourceType" initialState="//@resourceTypes.19/@states.0" name="Checkout">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <resourceelements xsi:type="reststructure:InternalLink" name="cart" target="//@resourceTypes.18"/>
+    <states name="created"/>
+  </resourceTypes>
+  <resourceTypes xsi:type="reststructure:SubresourceType" initialState="//@resourceTypes.20/@states.0" name="Biographie" containingType="//@resourceTypes.12">
+    <identifer xsi:type="reststructure:SimpleIdentifier" identifier="/myNewResource"/>
+    <states name="created"/>
+  </resourceTypes>
+</rest:RestApplicationModel>

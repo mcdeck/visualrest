@@ -1,0 +1,352 @@
+
+
+<html><head><title>Classifier <a href="../reststructure.html">reststructure</a>.SubresourceType</title></head>
+<body>
+<h2>Classifier <a href="../reststructure.html">reststructure</a>.SubresourceType</h2>
+
+<a href="../../index.html">Package List</a><br/><br/>
+
+
+
+Superclasses: <a href="ResourceType.html">ResourceType</a> <br/>
+
+
+
+
+ 
+
+
+a resource type which is part of another resource
+
+
+
+
+
+<br/>
+
+
+<hr/>
+Reference: <b>containingType</b> : <a href="
+
+ResourceType
+
+.html">
+
+ResourceType
+
+</a> 
+ [
+
+1
+
+]
+
+<br/>
+
+
+ 
+
+
+the containing resource type
+
+
+
+
+
+
+<br/>
+
+<hr/>
+
+<hr/>
+Attribute: <b>name</b> : EString
+
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+the name of this ResourceType
+
+
+
+
+
+
+</br>
+
+<hr/>
+Attribute: <b>isSingleton</b> : EBoolean
+
+(default: false)
+
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+true if this resource type defines a singleton
+
+
+
+
+
+
+</br>
+
+<hr/>
+Attribute: <b>createOnStart</b> : EBoolean
+
+(default: false)
+
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+true if the instance of this resource type is automatically created during the start of the application, only allowed when isSingleton is true
+
+
+
+
+
+
+</br>
+
+
+<hr/>
+Reference: <b>identifer</b> : <a href="
+
+ResourceIdentifierPattern
+
+.html">
+
+ResourceIdentifierPattern
+
+</a> 
+ [
+
+
+1..*
+
+
+]
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+the identifier patterns for this ResourceType
+
+
+
+
+
+
+<br/>
+
+<hr/>
+Reference: <b>resourceelements</b> : <a href="
+
+ResourceElement
+
+.html">
+
+ResourceElement
+
+</a> 
+ [
+
+
+*
+
+
+]
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+the elements which describe the properties of this ResourceType
+
+
+
+
+
+
+<br/>
+
+<hr/>
+Reference: <b>methods</b> : <a href="
+
+Method
+
+.html">
+
+Method
+
+</a> 
+ [
+
+
+*
+
+
+]
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+the methods which describe the behavior in the different states of this ResourceType
+
+
+
+
+
+
+<br/>
+
+<hr/>
+Reference: <b>creators</b> : <a href="
+
+../
+
+RestBehavior
+
+/Creator
+
+.html">
+
+Creator
+
+</a> 
+ [
+
+
+*
+
+
+]
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+the creators which enable the creation of new resources of this type
+
+
+
+
+
+
+<br/>
+
+<hr/>
+Reference: <b>states</b> : <a href="
+
+../
+
+RestBehavior
+
+/State
+
+.html">
+
+State
+
+</a> 
+ [
+
+
+1..*
+
+
+]
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+the states of this ResourceType
+
+
+
+
+
+
+<br/>
+
+<hr/>
+Reference: <b>initialState</b> : <a href="
+
+../
+
+RestBehavior
+
+/State
+
+.html">
+
+State
+
+</a> 
+ [
+
+1
+
+]
+
+ (inherited)
+
+<br/>
+
+
+ 
+
+
+the initial state of this ResourceType
+
+
+
+
+
+
+<br/>
+
+
+</body>
+</html>
+

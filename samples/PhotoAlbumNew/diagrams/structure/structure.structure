@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="RestStructureDiagram" name="New REST Structure Diagram" snapToGrid="true" pictogramLinks="//@children.0/@link //@children.0/@children.2/@link //@children.0/@children.5/@link //@children.0/@children.5/@children.0/@link //@children.0/@children.5/@children.1/@link //@children.0/@children.5/@children.2/@link //@children.0/@children.5/@children.3/@link" version="0.9.0">
+  <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="shape-id" value="resourcetype"/>
+    <properties key="IsCollapsed" value="FALSE"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.2" lineWidth="1" filled="true" transparency="0.0" width="150" height="150" x="252" y="215"/>
+    <link>
+      <businessObjects href="../../myApplication.rest#//@resourceTypes.5"/>
+    </link>
+    <anchors xsi:type="pi:ChopboxAnchor"/>
+    <children visible="true">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" y="60">
+        <points/>
+        <points x="150"/>
+      </graphicsAlgorithm>
+    </children>
+    <children visible="true">
+      <properties key="shape-id" value="resourcetype-stereotype"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="20" x="20" font="//@fonts.0" horizontalAlignment="ALIGNMENT_CENTER" value="&lt;&lt;Activity>>"/>
+    </children>
+    <children visible="true">
+      <properties key="shape-id" value="resourcetype-name"/>
+      <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="25" x="20" y="25" font="//@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="Suggestion"/>
+      <link>
+        <businessObjects href="../../myApplication.rest#//@resourceTypes.5"/>
+      </link>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="resourcetype-icon-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="150" height="150"/>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Image" lineWidth="1" transparency="0.0" width="50" height="50" x="2" y="5" id=" de.van_porten.graphiti.ui.diagram.icons..structure.activity_resource_type_symbol" stretchH="false" stretchV="false" proportional="false"/>
+      </children>
+    </children>
+    <children visible="true">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" y="90">
+        <points/>
+        <points x="150"/>
+      </graphicsAlgorithm>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true">
+      <properties key="shape-id" value="attribute-container-shape"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="150" height="150" y="95"/>
+      <link>
+        <businessObjects href="../../myApplication.rest#//@resourceTypes.5"/>
+      </link>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="25" x="5" font="//@fonts.0" value="+ statement : string"/>
+        <link>
+          <businessObjects href="../../myApplication.rest#//@resourceTypes.5/@resourceelements.0"/>
+        </link>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="25" x="5" y="15" font="//@fonts.0" value="+ positiveReviews : int"/>
+        <link>
+          <businessObjects href="../../myApplication.rest#//@resourceTypes.5/@resourceelements.1"/>
+        </link>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="25" x="5" y="30" font="//@fonts.0" value="+ negativeReviews : int"/>
+        <link>
+          <businessObjects href="../../myApplication.rest#//@resourceTypes.5/@resourceelements.2"/>
+        </link>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Text" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="25" x="5" y="45" font="//@fonts.0" value="+ status : string"/>
+        <link>
+          <businessObjects href="../../myApplication.rest#//@resourceTypes.5/@resourceelements.3"/>
+        </link>
+      </children>
+    </children>
+  </children>
+  <colors red="227" green="238" blue="249"/>
+  <colors red="255" green="255" blue="255"/>
+  <colors/>
+  <colors red="233" green="175" blue="198"/>
+  <fonts name="Arial" size="8"/>
+  <fonts name="Arial" size="8" bold="true"/>
+</pi:Diagram>

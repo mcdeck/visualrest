@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="RestMethodBehaviourDiagram" name="Picture Resource Methods Diagram" snapToGrid="true" version="0.9.0">
+  <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+  <link>
+    <businessObjects href="../../myApplication.rest#//@resourceTypes.0"/>
+  </link>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="shape-id" value="resource-type-indicator-shape"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="true" transparency="0.0" width="230" height="50" x="5" y="5">
+      <background href="../structure/overview.structure#/0/@colors.1"/>
+      <foreground href="../structure/overview.structure#/0/@colors.2"/>
+    </graphicsAlgorithm>
+    <link>
+      <businessObjects href="../../myApplication.rest#//@resourceTypes.0"/>
+    </link>
+    <children visible="true">
+      <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" width="230" height="50" x="5" horizontalAlignment="ALIGNMENT_CENTER" value="Methods of: Picture">
+        <foreground href="../structure/overview.structure#/0/@colors.2"/>
+        <font href="../structure/overview.structure#/0/@fonts.3"/>
+      </graphicsAlgorithm>
+    </children>
+  </children>
+  <colors red="227" green="238" blue="249"/>
+  <colors red="255" green="255" blue="255"/>
+  <colors/>
+  <colors red="128" green="128" blue="128"/>
+  <fonts name="Arial" size="8"/>
+  <fonts name="Arial" size="10" italic="true"/>
+  <fonts name="Arial" size="10" bold="true"/>
+</pi:Diagram>

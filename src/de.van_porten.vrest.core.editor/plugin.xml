@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.van_porten.vrest.core.model.rest.presentation.RestModelWizardID"
+            name="%_UI_RestModelWizard_label"
+            class="de.van_porten.vrest.core.model.rest.presentation.RestModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RestModelFile.gif">
+         <description>%_UI_RestModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="de.van_porten.vrest.core.model.rest.presentation.RestEditorID"
+            name="%_UI_RestEditor_label"
+            icon="icons/full/obj16/RestModelFile.gif"
+            extensions="rest"
+            class="de.van_porten.vrest.core.model.rest.presentation.RestEditor"
+            contributorClass="de.van_porten.vrest.core.model.rest.presentation.RestActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.van_porten.vrest.core.model.reststructure.presentation.RestStructureModelWizardID"
+            name="%_UI_RestStructureModelWizard_label"
+            class="de.van_porten.vrest.core.model.reststructure.presentation.RestStructureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RestStructureModelFile.gif">
+         <description>%_UI_RestStructureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="de.van_porten.vrest.core.model.reststructure.presentation.RestStructureEditorID"
+            name="%_UI_RestStructureEditor_label"
+            icon="icons/full/obj16/RestStructureModelFile.gif"
+            extensions="reststructure"
+            class="de.van_porten.vrest.core.model.reststructure.presentation.RestStructureEditor"
+            contributorClass="de.van_porten.vrest.core.model.reststructure.presentation.RestStructureActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.van_porten.vrest.core.model.restbehavior.presentation.RestBehaviorModelWizardID"
+            name="%_UI_RestBehaviorModelWizard_label"
+            class="de.van_porten.vrest.core.model.restbehavior.presentation.RestBehaviorModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RestBehaviorModelFile.gif">
+         <description>%_UI_RestBehaviorModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="de.van_porten.vrest.core.model.restbehavior.presentation.RestBehaviorEditorID"
+            name="%_UI_RestBehaviorEditor_label"
+            icon="icons/full/obj16/RestBehaviorModelFile.gif"
+            extensions="restbehavior"
+            class="de.van_porten.vrest.core.model.restbehavior.presentation.RestBehaviorEditor"
+            contributorClass="de.van_porten.vrest.core.model.restbehavior.presentation.RestBehaviorActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

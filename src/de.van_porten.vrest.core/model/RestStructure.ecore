@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="reststructure"
+    nsURI="http://reststructure/1.0" nsPrefix="reststructure">
+  <eAnnotations references="#//ResourceType">
+    <details key="description" value="the abstract classifier to define a resource type"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/name">
+    <details key="description" value="the name of this ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/isSingleton">
+    <details key="description" value="true if this resource type defines a singleton"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/createOnStart">
+    <details key="description" value="true if the instance of this resource type is automatically created during the start of the application, only allowed when isSingleton is true"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/identifer">
+    <details key="description" value="the identifier patterns for this ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/resourceelements">
+    <details key="description" value="the elements which describe the properties of this ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/methods">
+    <details key="description" value="the methods which describe the behavior in the different states of this ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/creators">
+    <details key="description" value="the creators which enable the creation of new resources of this type"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/states">
+    <details key="description" value="the states of this ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceType/initialState">
+    <details key="description" value="the initial state of this ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceElement">
+    <details key="description" value="describes the properties of a ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceElement/name">
+    <details key="description" value="the name of a ResourceElement"/>
+  </eAnnotations>
+  <eAnnotations references="#//ResourceIdentifierPattern">
+    <details key="description" value="the abstract classifier for a resource identifier pattern"/>
+  </eAnnotations>
+  <eAnnotations references="#//Attribute">
+    <details key="description" value="a typed attribute of a Resource"/>
+  </eAnnotations>
+  <eAnnotations references="#//Attribute/attrType">
+    <details key="description" value="the type of an attribute"/>
+  </eAnnotations>
+  <eAnnotations references="#//Link">
+    <details key="description" value="a link contained in a ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//Link/relType">
+    <details key="description" value="the relation type of a link"/>
+  </eAnnotations>
+  <eAnnotations references="#//LinkCollection">
+    <details key="description" value="a collection of links contained in a ResourceType"/>
+  </eAnnotations>
+  <eAnnotations references="#//DataType">
+    <details key="description" value="a data type"/>
+  </eAnnotations>
+  <eAnnotations references="#//Parameter">
+    <details key="description" value="a typed parameter of a method (or creator?)"/>
+  </eAnnotations>
+  <eAnnotations references="#//Parameter/paramType">
+    <details key="description" value="the type of a parameter"/>
+  </eAnnotations>
+  <eAnnotations references="#//Method">
+    <details key="description" value="defines the behavior of a resource"/>
+  </eAnnotations>
+  <eAnnotations references="#//Method/name">
+    <details key="description" value="the internal name of the Method (not visible to any client)"/>
+  </eAnnotations>
+  <eAnnotations references="#//Method/consumed">
+    <details key="description" value="the list of all MediaTypes which are accepted"/>
+  </eAnnotations>
+  <eAnnotations references="#//Method/produced">
+    <details key="description" value="the list of all MediaTypes which can be returned"/>
+  </eAnnotations>
+  <eAnnotations references="#//Method/methodtype">
+    <details key="description" value="the type of the Method (not the return value but, e.g., HTTP-GET)"/>
+  </eAnnotations>
+  <eAnnotations references="#//Method/parameters">
+    <details key="description" value="the parameters of this Method"/>
+  </eAnnotations>
+  <eAnnotations references="#//Method/methodbehavior">
+    <details key="description" value="the specified behavior of this Method"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaType">
+    <details key="description" value="only defines the possible contained data and no format information"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaType/name">
+    <details key="description" value="the name of the media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaType/containedMTElements">
+    <details key="description" value="the elements of the media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaType/containedMTLinks">
+    <details key="description" value="the links of the media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaType/containedMTLinkCollections">
+    <details key="description" value="the link collections of the media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//Representation">
+    <details key="description" value="defines the data contained in a representation returned by the application to a client but no format information"/>
+  </eAnnotations>
+  <eAnnotations references="#//Representation/name">
+    <details key="description" value="the name of the representation"/>
+  </eAnnotations>
+  <eAnnotations references="#//Representation/containedRepElements">
+    <details key="description" value="the elements of the representation"/>
+  </eAnnotations>
+  <eAnnotations references="#//Representation/mediatype">
+    <details key="description" value="the mediatype of this representation"/>
+  </eAnnotations>
+  <eAnnotations references="#//Representation/containedRepLinks">
+    <details key="description" value="the links of the representation"/>
+  </eAnnotations>
+  <eAnnotations references="#//Representation/containedRepLinkCollections">
+    <details key="description" value="the link collections of this representation"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationElement">
+    <details key="description" value="defines one typed data element of a Representation"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationElement/name">
+    <details key="description" value="the name of the representation element"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationElement/correspondingElement">
+    <details key="description" value="the corresponding element contained in the media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationElement/repElemType">
+    <details key="description" value="the data type of the representation element"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationElement/value">
+    <details key="description" value="the value of the representation element"/>
+  </eAnnotations>
+  <eAnnotations references="#//MethodType">
+    <details key="description" value="a method defining the response of a ResourceType to a message with specified MethodType dependent on the current state"/>
+  </eAnnotations>
+  <eAnnotations references="#//MethodType">
+    <details key="description" value="defines one type of the fixed set of method types, e.g., HTTP-GET"/>
+  </eAnnotations>
+  <eAnnotations references="#//MethodType/name">
+    <details key="description" value="the name of the method type"/>
+  </eAnnotations>
+  <eAnnotations references="#//RelationType">
+    <details key="description" value="defines a link relation"/>
+  </eAnnotations>
+  <eAnnotations references="#//RelationType/name">
+    <details key="description" value="the name of the relation type"/>
+  </eAnnotations>
+  <eAnnotations references="#//InternalLink">
+    <details key="description" value="a link to a resource which is part of this model"/>
+  </eAnnotations>
+  <eAnnotations references="#//InternalLink/target">
+    <details key="description" value="the resource type of the target"/>
+  </eAnnotations>
+  <eAnnotations references="#//ExternalLink">
+    <details key="description" value="a link to any resource"/>
+  </eAnnotations>
+  <eAnnotations references="#//ExternalLinkCollection">
+    <details key="description" value="a collection of external links"/>
+  </eAnnotations>
+  <eAnnotations references="#//ExternalLinkCollection/extElements">
+    <details key="description" value="the elements of the collection"/>
+  </eAnnotations>
+  <eAnnotations references="#//InternalLinkCollection">
+    <details key="description" value="a collection of internal links"/>
+  </eAnnotations>
+  <eAnnotations references="#//InternalLinkCollection/intElements">
+    <details key="description" value="the elements of the collection"/>
+  </eAnnotations>
+  <eAnnotations references="#//PrimitiveDataType">
+    <details key="description" value="a primitive data type"/>
+  </eAnnotations>
+  <eAnnotations references="#//PrimitiveDataType/name">
+    <details key="description" value="the name of the data type"/>
+  </eAnnotations>
+  <eAnnotations references="#//CollectionType">
+    <details key="description" value="a type for defining collections"/>
+  </eAnnotations>
+  <eAnnotations references="#//CollectionType/elementType">
+    <details key="description" value="the type of the collection elements"/>
+  </eAnnotations>
+  <eAnnotations references="#//SimpleIdentifier">
+    <details key="description" value="a simple identifier for a resource"/>
+  </eAnnotations>
+  <eAnnotations references="#//SimpleIdentifier/identifier">
+    <details key="description" value="the identifier as string"/>
+  </eAnnotations>
+  <eAnnotations references="#//ComplexIdentifierPattern">
+    <details key="description" value="the pattern describing the identifier"/>
+  </eAnnotations>
+  <eAnnotations references="#//ComplexIdentifierPattern/idParams">
+    <details key="description" value="the parameter contained in the identifier"/>
+  </eAnnotations>
+  <eAnnotations references="#//ComplexIdentifierPattern/idAttrs">
+    <details key="description" value="the attributes contained in the identifier"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaTypeElement">
+    <details key="description" value="the elements defined by a media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaTypeElement/name">
+    <details key="description" value="the name of the element"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaTypeElement/mtelemType">
+    <details key="description" value="the type of the element"/>
+  </eAnnotations>
+  <eAnnotations references="#//SubresourceType">
+    <details key="description" value="a resource type which is part of another resource"/>
+  </eAnnotations>
+  <eAnnotations references="#//SubresourceType/containingType">
+    <details key="description" value="the containing resource type"/>
+  </eAnnotations>
+  <eAnnotations references="#//AggregationResourceType">
+    <details key="description" value="an aggregated resource type of different other resources"/>
+  </eAnnotations>
+  <eAnnotations references="#//AggregationResourceType/elementTypes">
+    <details key="description" value="the aggregated resource types"/>
+  </eAnnotations>
+  <eAnnotations references="#//PrimaryResourceType">
+    <details key="description" value="a resource type representing a primary domain element"/>
+  </eAnnotations>
+  <eAnnotations references="#//ActivityResourceType">
+    <details key="description" value="a resource type representing (a part of) a process"/>
+  </eAnnotations>
+  <eAnnotations references="#//PagingResourceType">
+    <details key="description" value="a resource type which divides another resource in several (smaller) pages"/>
+  </eAnnotations>
+  <eAnnotations references="#//PagingResourceType/pagedType">
+    <details key="description" value="the divided resource type"/>
+  </eAnnotations>
+  <eAnnotations references="#//ProjectionResourceType">
+    <details key="description" value="a resource type representing only a part of the information of another resource type; in case of a list, e.g. showing the most important information of all list elements"/>
+  </eAnnotations>
+  <eAnnotations references="#//ProjectionResourceType/projectedType">
+    <details key="description" value="the projected resource type"/>
+  </eAnnotations>
+  <eAnnotations references="#//ListResourceType">
+    <details key="description" value="a resource type representing a list of other resource types"/>
+  </eAnnotations>
+  <eAnnotations references="#//ListResourceType/listElementType">
+    <details key="description" value="the list elements"/>
+  </eAnnotations>
+  <eAnnotations references="#//FilterResourceType">
+    <details key="description" value="a list which contains only resources of another list that fulfill the condition"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaTypeLink">
+    <details key="description" value="a link defined by a media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaTypeLink/name">
+    <details key="description" value="the name of the media type link"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaTypeLinkCollection">
+    <details key="description" value="a link collection defined by a media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//MediaTypeLinkCollection/name">
+    <details key="description" value="the name of the media type link collection"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationLink">
+    <details key="description" value="a link contained in a representation"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationLink/name">
+    <details key="description" value="the name of the representation link"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationLink/correspondingLink">
+    <details key="description" value="the corresponding link defined by the media type"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationLink/linkValue">
+    <details key="description" value="the concrete link"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationLinkCollection">
+    <details key="description" value="a link collection contained in a representation"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationLinkCollection/name">
+    <details key="description" value="the name of the link collection"/>
+  </eAnnotations>
+  <eAnnotations references="#//RepresentationLinkCollection/correspondingLinkCollection">
+    <details key="description" value="the corresponding link collection defined by the media type"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceType" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="identifer" lowerBound="1"
+        upperBound="-1" eType="#//ResourceIdentifierPattern" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resourceelements" upperBound="-1"
+        eType="#//ResourceElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methods" upperBound="-1"
+        eType="#//Method" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="creators" upperBound="-1"
+        eType="ecore:EClass RestBehavior.ecore#//Creator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="states" lowerBound="1"
+        upperBound="-1" eType="ecore:EClass RestBehavior.ecore#//State" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="initialState" lowerBound="1"
+        eType="ecore:EClass RestBehavior.ecore#//State"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSingleton" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="createOnStart" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceIdentifierPattern" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute" eSuperTypes="#//ResourceElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attrType" lowerBound="1"
+        eType="#//DataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Link" abstract="true" eSuperTypes="#//ResourceElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relType" eType="#//RelationType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LinkCollection" eSuperTypes="#//ResourceElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DataType" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paramType" eType="#//DataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Method">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consumed" upperBound="-1"
+        eType="#//MediaType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="produced" lowerBound="1"
+        upperBound="-1" eType="#//MediaType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methodtype" lowerBound="1"
+        eType="#//MethodType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//Parameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methodbehavior" lowerBound="1"
+        eType="ecore:EClass RestBehavior.ecore#//BehaviorSpecification" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MediaType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedMTElements" upperBound="-1"
+        eType="#//MediaTypeElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedMTLinks" upperBound="-1"
+        eType="#//MediaTypeLink" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedMTLinkCollections"
+        upperBound="-1" eType="#//MediaTypeLinkCollection" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Representation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedRepElements" upperBound="-1"
+        eType="#//RepresentationElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mediatype" eType="#//MediaType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedRepLinks" upperBound="-1"
+        eType="#//RepresentationLink" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedRepLinkCollections"
+        upperBound="-1" eType="#//RepresentationLinkCollection" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RepresentationElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="correspondingElement" eType="#//MediaTypeElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="repElemType" eType="#//DataType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" lowerBound="1" eType="ecore:EClass RestBehavior.ecore#//Value"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MethodType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InternalLink" eSuperTypes="#//Link">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//ResourceType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalLink" eSuperTypes="#//Link"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalLinkCollection" eSuperTypes="#//LinkCollection">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extElements" upperBound="-1"
+        eType="#//ExternalLink"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InternalLinkCollection" eSuperTypes="#//LinkCollection">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="intElements" upperBound="-1"
+        eType="#//InternalLink"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PrimitiveDataType" eSuperTypes="#//DataType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CollectionType" eSuperTypes="#//DataType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementType" lowerBound="1"
+        eType="#//DataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleIdentifier" eSuperTypes="#//ResourceIdentifierPattern">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComplexIdentifierPattern" eSuperTypes="#//ResourceIdentifierPattern">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="idParams" upperBound="-1"
+        eType="#//Parameter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="idAttrs" upperBound="-1"
+        eType="#//Attribute"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MediaTypeElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mtelemType" eType="#//DataType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SubresourceType" eSuperTypes="#//ResourceType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containingType" lowerBound="1"
+        eType="#//ResourceType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AggregationResourceType" eSuperTypes="#//ResourceType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementTypes" lowerBound="2"
+        upperBound="-1" eType="#//ResourceType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PrimaryResourceType" eSuperTypes="#//ResourceType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ActivityResourceType" eSuperTypes="#//ResourceType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PagingResourceType" eSuperTypes="#//ResourceType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pagedType" lowerBound="1"
+        eType="#//ResourceType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProjectionResourceType" eSuperTypes="#//ResourceType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="projectedType" lowerBound="1"
+        eType="#//ResourceType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ListResourceType" eSuperTypes="#//ResourceType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listElementType" lowerBound="1"
+        eType="#//ResourceType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FilterResourceType" eSuperTypes="#//ListResourceType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MediaTypeLink">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MediaTypeLinkCollection">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RepresentationLink">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="correspondingLink" eType="#//MediaTypeLink"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkValue" lowerBound="1"
+        eType="#//Link"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RepresentationLinkCollection">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="correspondingLinkCollection"
+        eType="#//MediaTypeLinkCollection"/>
+  </eClassifiers>
+</ecore:EPackage>

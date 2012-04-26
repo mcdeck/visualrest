@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.van_porten.vrest.tests.feature"
+      label="Visual REST Tests Feature"
+      version="1.0.0.qualifier"
+      provider-name="van-porten.de">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="de.van_porten.vrest.core"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.junit"/>
+      <import plugin="de.van_porten.vrest.core.edit" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.van_porten.vrest.core.editor" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.windowtester.runtime"/>
+      <import plugin="com.windowtester.swt.runtime"/>
+      <import plugin="com.windowtester.swing.runtime"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="com.windowtester.swt.runtime.gef"/>
+      <import plugin="org.eclipse.swt"/>
+      <import plugin="org.eclipse.draw2d"/>
+      <import plugin="org.eclipse.gef"/>
+      <import plugin="de.van_porten.vrest.bundle"/>
+      <import plugin="de.van_porten.vrest.help"/>
+      <import plugin="de.van_porten.vrest.ui"/>
+      <import plugin="de.van_porten.vrest.ui.properties"/>
+      <import plugin="org.eclipse.swtbot.eclipse.gef.finder" version="2.0.5" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.swtbot.go" version="2.0.5" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.gef" version="3.7.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.gmf.runtime.gef.ui" version="1.4.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.gmf.runtime.emf.core" version="1.4.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.graphiti" version="0.9.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.graphiti.mm" version="0.9.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.graphiti.ui" version="0.9.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.swt" version="3.7.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.junit4.runtime" version="1.1.200" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="de.van_porten.vrest.tests.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.van_porten.vrest.tests.recorded"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.van_porten.vrest.tests.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
