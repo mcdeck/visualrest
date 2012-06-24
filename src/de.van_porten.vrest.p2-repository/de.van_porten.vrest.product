@@ -265,9 +265,9 @@ limitations under the License.
       <feature id="org.eclipse.equinox.p2.user.ui" version="2.1.2.R37x_v20110815-1155-6-Bj9JXOeQxOURYC-l9BL7rDEQO7"/>
       <feature id="org.eclipse.emf" version="2.7.2.v20120130-0943"/>
       <feature id="org.eclipse.gef" version="3.7.2.v20110927-2020-777D381B4Bz0755B465D34242"/>
-      <feature id="org.eclipse.graphiti.feature" version="0.9.0.v20120321-0814"/>
-      <feature id="org.eclipse.graphiti.sdk.feature" version="0.9.0.v20120321-0814"/>
-      <feature id="org.eclipse.graphiti.sdk.plus.feature" version="0.9.0.v20120321-0814"/>
+      <feature id="org.eclipse.graphiti.feature" version="0.9.0.v20120613-0805"/>
+      <feature id="org.eclipse.graphiti.sdk.feature" version="0.9.0.v20120613-0805"/>
+      <feature id="org.eclipse.graphiti.sdk.plus.feature" version="0.9.0.v20120613-0805"/>
       <feature id="org.eclipse.gmf" version="1.5.0.v20110607-1200-7d9Q7HFYnmMEynz0X0qrbsDiK281"/>
    </features>
 
