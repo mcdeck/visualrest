@@ -18,9 +18,8 @@
     <eclipse-site>http://download.eclipse.org/releases/${platform-version-name}</eclipse-site>
     <swtbot-site>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site</swtbot-site>
     <eef-site>http://download.eclipse.org/modeling/emft/eef/updates/releases</eef-site>
-    <graphiti-site>http://download.eclipse.org/graphiti/updates/0.8.1</graphiti-site>
+    <graphiti-site>http://download.eclipse.org/graphiti/updates/0.9.0</graphiti-site>
     <orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository</orbit-site>
-    <graphiti-milestone-site>http://download.eclipse.org/graphiti/updates/milestones</graphiti-milestone-site>
     <windowtester-pro-site>http://dl.google.com/eclipse/inst/windowtester/beta/3.7</windowtester-pro-site>
   </properties>
 
@@ -49,11 +48,6 @@
       <id>oribt</id>
       <layout>p2</layout>
       <url>${orbit-site}</url>
-    </repository>
-    <repository>
-      <id>graphiti_milestones</id>
-      <layout>p2</layout>
-      <url>${graphiti-milestone-site}</url>
     </repository>
     <repository>
       <id>windowtester</id>
