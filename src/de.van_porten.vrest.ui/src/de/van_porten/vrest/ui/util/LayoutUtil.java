@@ -136,7 +136,8 @@ public class LayoutUtil {
 
 	public static String createStringFromRepresentation(
 			Representation representation) {
-		String returnValue = "???";
+		//String returnValue = "???";
+		String returnValue = "";
 		if (representation != null && representation.getName() != null) {
 			returnValue = representation.getName();
 		}
@@ -145,7 +146,8 @@ public class LayoutUtil {
 
 	public static String createStringFromWriteableReference(
 			WritableReference wRef) {
-		String refString = "???";
+		//String refString = "???";
+		String refString = "";
 		if (wRef != null) {
 			if (wRef instanceof AttributeReference) {
 				Attribute attr = ((AttributeReference) wRef)
@@ -179,7 +181,8 @@ public class LayoutUtil {
 	}
 
 	public static String createStringFromValue(Value value) {
-		String valString = "?";
+		//String valString = "?";
+		String valString = "";
 		if (value != null) {
 			if (value instanceof BinaryOperation) {
 				Value firstOp = ((BinaryOperation) value).getFirstOp();
@@ -197,7 +200,9 @@ public class LayoutUtil {
 	}
 
 	public static String createStringFromUpdateAction(UpdateAction updateAction) {
-		String returnValue = "??? ::> ???";
+		//String returnValue = "??? ::> ???";
+		String returnValue = "";
+		/*
 		if (updateAction != null) {
 			WritableReference wRef = updateAction.getElementForUpdate();
 			Value value = updateAction.getNewValue();
@@ -206,6 +211,7 @@ public class LayoutUtil {
 			String valString = createStringFromValue(value);
 			returnValue = refString + " ::> " + valString;
 		}
+		*/
 		return returnValue;
 	}
 

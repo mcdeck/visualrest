@@ -41,7 +41,7 @@ public class LayoutMethodFeature extends AbstractLayoutFeature {
 		GraphicsAlgorithm containerGa = containerShape.getGraphicsAlgorithm();
 
 		IGaService gaService = Graphiti.getGaService();
-
+/*
 		if (containerGa.getHeight() < AddMethodFeature.minHeight) {
 			containerGa.setHeight(AddMethodFeature.minHeight);
 			anythingChanged = true;
@@ -51,7 +51,7 @@ public class LayoutMethodFeature extends AbstractLayoutFeature {
 			containerGa.setWidth(AddMethodFeature.minWidth);
 			anythingChanged = true;
 		}
-
+*/
 		int containerWidth = containerGa.getWidth();
 		int containerHeight = containerGa.getHeight();
 
