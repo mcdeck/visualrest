@@ -1,5 +1,7 @@
 # Visual REST
 
+[![Build Status](https://travis-ci.org/mcdeck/visualrest.svg?branch=master)](https://travis-ci.org/mcdeck/visualrest)
+
 **See the [Wiki](https://github.com/mcdeck/visualrest/wiki) for more details**
 
 ## What is Visual REST
