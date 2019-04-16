@@ -15,7 +15,7 @@ I developed Visual REST as part of my master’s thesis at the University of Hag
 It is implemented as an Eclipse-based editor using Graphiti and enables creation of application models. 
 As of today, code generation is not part of the IDE, though.
 
-== Publications ==
+##  Publications
 * Schreier, S.: Modeling RESTful applications. In: Proceedings of the Second International Workshop on RESTful Design. pp. 15-21. ACM, New York (2011)
 * van Porten, O.: Development and Evaluation of a Graphical Notation for Modelling Resource-Oriented Applications. Research Report 1/2012, FernUniversität in Hagen (2012), http://deposit.fernuni-hagen.de/2810/
 
