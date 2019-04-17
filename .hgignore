@@ -1,7 +1,0 @@
-syntax: glob
-src/.metadata
-src/*/bin
-src/*/target
-src/de.van_porten.vrest.tests.ui/screenshots
-src/de.van_porten.vrest.tests.ui/wintest
-.DS_Store

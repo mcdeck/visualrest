@@ -10,7 +10,17 @@
   <packaging>pom</packaging>
 
   <properties>
-    <tycho-version>0.13.0</tycho-version>
+
+    <!-- package zulu jre -->
+    <download.url>https://cdn.azul.com/zulu/bin/</download.url>
+    <download.file>zulu1.6.0_73-6.10.0.3-</download.file>
+
+   <maven.compiler.source>1.6</maven.compiler.source>
+   <maven.compiler.target>1.6</maven.compiler.target>
+
+    <!-- <tycho-version>0.13.0</tycho-version> -->
+    <!-- <tycho-version>1.4.0</tycho-version> -->
+    <tycho-version>0.22.0</tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <platform-version-name>indigo</platform-version-name>
@@ -18,7 +28,8 @@
     <eclipse-site>http://download.eclipse.org/releases/${platform-version-name}</eclipse-site>
     <swtbot-site>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site</swtbot-site>
     <eef-site>http://download.eclipse.org/modeling/emft/eef/updates/releases</eef-site>
-    <graphiti-site>http://download.eclipse.org/graphiti/updates/0.9.0</graphiti-site>
+    <!-- <graphiti-site>http://download.eclipse.org/graphiti/updates/0.9.0</graphiti-site> -->
+    <graphiti-site>http://archive.eclipse.org/graphiti/updates/0.9.0</graphiti-site>
     <orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository</orbit-site>
     <windowtester-pro-site>http://dl.google.com/eclipse/inst/windowtester/beta/3.7</windowtester-pro-site>
   </properties>
@@ -54,6 +65,12 @@
       <layout>p2</layout>
       <url>${windowtester-pro-site}</url>
     </repository>
+
+    <repository>
+			<id>abuchen</id>
+      <layout>p2</layout>
+			<url>https://ci.de.dariah.eu/p2/nightly/bundled-jre/</url>
+		</repository>    
   </repositories>
 
   <modules>
