@@ -21,12 +21,12 @@ before_install:
 before_script:
   - sh -e /etc/init.d/xvfb start
   - sleep 10
-  # - metacity --sm-disable --replace & # we need a WM to test SWTBot
-  # - sleep 10
+  - metacity --sm-disable --replace & # we need a WM to test SWTBot
+  - sleep 10
 
 script:    
   - cd src/de.van_porten.vrest.build
-  - mvn install
+  - mvn clean package verify
 
 # adapted from https://github.com/satyagraha/gfm_viewer/blob/master/.travis.yml  
 after_failure:
