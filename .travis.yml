@@ -1,19 +1,47 @@
 language: java    
+
 jdk:
   - openjdk7
+
 cache:  
   directories:  
    - $HOME/.m2
-dist: trusty   
+
+dist: trusty 
+
+env: DISPLAY=:99.0  
+
+install: true
+
 before_install:
-  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"   
+  - sudo apt-get update
+  - sudo apt-get install gnome-themes-standard
+  - sudo apt-get install metacity
+  - sudo apt-get install libwebkit-dev
+  - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16
+
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start   
+  - sh -e /etc/init.d/xvfb start
+  - sleep 10
+  - metacity --sm-disable --replace & # we need a WM to test SWTBot
+  - sleep 10
+
 script:    
   - cd src/de.van_porten.vrest.build
   - mvn install
+
+# adapted from https://github.com/satyagraha/gfm_viewer/blob/master/.travis.yml  
+after_failure:
+  - cat src/de.van_porten.vrest.build/target/work/data/.metadata/.log
+  - cat src/de.van_porten.vrest.tests.core/target/work/data/.metadata/.log
+  - cat src/de.van_porten.vrest.tests.core/target/surefire-reports/*
+  - cat src/de.van_porten.vrest.tests.ui/target/work/data/.metadata/.log
+  - cat src/de.van_porten.vrest.tests.ui/target/surefire-reports/* 
+  - cat src/de.van_porten.vrest.tests.recorded/target/work/data/.metadata/.log
+  - cat src/de.van_porten.vrest.tests.recorded/target/surefire-reports/*  
+  - cat src/de.van_porten.vrest.tests.feature/target/work/data/.metadata/.log
+  - cat src/de.van_porten.vrest.tests.feature/target/surefire-reports/*  
+
 deploy:  
   skip_cleanup: true  
   provider: releases  
