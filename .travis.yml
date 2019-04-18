@@ -14,6 +14,7 @@ before_script:
 script:    
   - cd src/de.van_porten.vrest.build
   - mvn install
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.core/target/work/data/.metadata/.log
 deploy:  
   skip_cleanup: true  
   provider: releases  
