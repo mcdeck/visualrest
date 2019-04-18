@@ -9,13 +9,9 @@ cache:
 
 dist: trusty 
 
-#env: DISPLAY=:99.0  
-
 before_install:
-  #- sudo apt-get update
-  #- sudo apt-get install gnome-themes-standard
+  - "sudo apt-get install gnome-themes-standard"
   - "sudo apt-get install metacity"
-  #- sudo apt-get install libwebkit-dev
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
 
 before_script:
@@ -31,15 +27,15 @@ script:
 
 # adapted from https://github.com/satyagraha/gfm_viewer/blob/master/.travis.yml  
 after_failure:
-  - cat src/de.van_porten.vrest.build/target/work/data/.metadata/.log
-  - cat src/de.van_porten.vrest.tests.core/target/work/data/.metadata/.log
-  - cat src/de.van_porten.vrest.tests.core/target/surefire-reports/*
-  - cat src/de.van_porten.vrest.tests.ui/target/work/data/.metadata/.log
-  - cat src/de.van_porten.vrest.tests.ui/target/surefire-reports/* 
-  - cat src/de.van_porten.vrest.tests.recorded/target/work/data/.metadata/.log
-  - cat src/de.van_porten.vrest.tests.recorded/target/surefire-reports/*  
-  - cat src/de.van_porten.vrest.tests.feature/target/work/data/.metadata/.log
-  - cat src/de.van_porten.vrest.tests.feature/target/surefire-reports/*  
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.build/target/work/data/.metadata/.log
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.core/target/work/data/.metadata/.log
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.core/target/surefire-reports/*
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.ui/target/work/data/.metadata/.log
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.ui/target/surefire-reports/* 
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.recorded/target/work/data/.metadata/.log
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.recorded/target/surefire-reports/*
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.feature/target/work/data/.metadata/.log
+  - cat /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.tests.feature/target/surefire-reports/*  
 
 deploy:  
   skip_cleanup: true  
@@ -47,13 +43,13 @@ deploy:
   api_key:   
     secure: TBD
   file: 
-    - src/de.van_porten.vrest.p2-repository/target/updatesite.zip
-    - src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-win32.win32.x86.zip
-    - src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-win32.win32.x86_64.zip
-    - src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-linux.gtk.x86.zip
-    - src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-linux.gtk.x86_64.zip
-    - src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-macosx.cocoa.x86.zip
-    - src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-macosx.cocoa.x86_64.zip
+    - /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.p2-repository/target/updatesite.zip
+    - /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-win32.win32.x86.zip
+    - /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-win32.win32.x86_64.zip
+    - /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-linux.gtk.x86.zip
+    - /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-linux.gtk.x86_64.zip
+    - /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-macosx.cocoa.x86.zip
+    - /home/travis/build/mcdeck/visualrest/src/de.van_porten.vrest.p2-repository/target/products/de.van_porten.vrest.product-macosx.cocoa.x86_64.zip
   on:  
    tags: true
    # condition: "$TRAVIS_TAG =~ ^release.*$"
