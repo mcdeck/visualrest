@@ -9,7 +9,8 @@ env:
   global:  
     - DISPLAY=:99.0  
   before_install:  
-   - sh -e /etc/init.d/xvfb start - sleep 10  
+   - sh -e /etc/init.d/xvfb start 
+   - sleep 10  
 script:    
   - cd src/de.van_porten.vrest.build
   - mvn install
