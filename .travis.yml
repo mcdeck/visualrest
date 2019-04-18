@@ -11,8 +11,6 @@ dist: trusty
 
 env: DISPLAY=:99.0  
 
-install: true
-
 before_install:
   - sudo apt-get update
   - sudo apt-get install gnome-themes-standard
