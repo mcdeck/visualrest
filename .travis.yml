@@ -23,7 +23,7 @@ before_script:
 
 script:    
   - cd src/de.van_porten.vrest.build
-  - mvn clean package verify
+  - mvn -Dtycho.disableP2Mirrors=true clean package verify
 
 # adapted from https://github.com/satyagraha/gfm_viewer/blob/master/.travis.yml  
 after_failure:
