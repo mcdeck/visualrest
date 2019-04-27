@@ -57,13 +57,15 @@
          version="0.0.0"
          unpack="false"/>
 
+   <!-- WindowTester Pro no longer supported; no 64bit support, removing
    <plugin
          id="de.van_porten.vrest.tests.recorded"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
+   -->
+      
    <plugin
          id="de.van_porten.vrest.tests.ui"
          download-size="0"
