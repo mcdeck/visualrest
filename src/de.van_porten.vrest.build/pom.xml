@@ -91,7 +91,8 @@
 
     <module>../de.van_porten.vrest.tests.core</module>
     <module>../de.van_porten.vrest.tests.ui</module>
-    <module>../de.van_porten.vrest.tests.recorded</module>
+    <!-- WindowTester Pro seems to be dead, and also does not work on 64bit Java .. so yeah, removing it -->
+    <!-- <module>../de.van_porten.vrest.tests.recorded</module> -->
     <module>../de.van_porten.vrest.tests.feature</module>
 
     <module>../de.van_porten.vrest.p2-repository</module>
