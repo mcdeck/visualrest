@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-  xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" 
+  xmlns="http://maven.apache.org/POM/4.0.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>de.van_porten</groupId>
@@ -15,8 +15,8 @@
     <download.url>https://cdn.azul.com/zulu/bin/</download.url>
     <download.file>zulu1.6.0_73-6.10.0.3-</download.file>
 
-   <maven.compiler.source>1.6</maven.compiler.source>
-   <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
 
     <!-- <tycho-version>0.13.0</tycho-version> -->
     <!-- <tycho-version>1.4.0</tycho-version> -->
@@ -67,10 +67,10 @@
     </repository>
 
     <repository>
-			<id>abuchen</id>
+      <id>abuchen</id>
       <layout>p2</layout>
-			<url>https://ci.de.dariah.eu/p2/nightly/bundled-jre/</url>
-		</repository>    
+      <url>https://ci.de.dariah.eu/p2/nightly/bundled-jre/</url>
+    </repository>
   </repositories>
 
   <modules>
@@ -107,16 +107,16 @@
         <version>${tycho-version}</version>
         <extensions>true</extensions>
       </plugin>
-	    
-	<plugin>
-	 <groupId>org.eclipse.tycho</groupId>
-	 <artifactId>tycho-p2-repository-plugin</artifactId>
-	 <version>${tycho-version}</version>
-	 <configuration>
-	  <createArtifactRepository>true</createArtifactRepository>
-	 </configuration>
-	</plugin>
-	    
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-repository-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <createArtifactRepository>true</createArtifactRepository>
+        </configuration>
+      </plugin>
+
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>target-platform-configuration</artifactId>
@@ -161,7 +161,7 @@
               <arch>x86_64</arch>
             </environment>
 
-           </environments>
+          </environments>
           <ignoreTychoRepositories>true</ignoreTychoRepositories>
         </configuration>
       </plugin>

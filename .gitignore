@@ -6,3 +6,4 @@ src/de.van_porten.vrest.tests.ui/wintest
 .DS_Store
 **/org.eclipse.m2e.core.prefs
 **/org.eclipse.core.resources.prefs
+.vscode/settings.json
